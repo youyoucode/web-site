@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit">
+    <title>悠悠编程学生信息查询系统</title>
+    <link type="text/css" rel="stylesheet" href="css/main.css"/>
+</head>
+<body >
+<div class="container">
+    <div class="publicSearch"> 
+        <div class="search-write-wrap">
+            <span class="search-write-left pr">
+                <input class="search-write-cont" value="" id="DomainName" type="text" name="DomainName" url="true" f="1">
+                <b class="search-hint" style="display: block;">请输入账号</b>
+            </span>
+            <span class="search-write-right"><div class="search-write-btn">查询</div></span>
+        </div>
+        <div id="ToolBox"></div>
+        <div id="list-write-wrap"></div>
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript">
+    $(function(){
+        winWidth = $(window).width();
+        $(".container").width(winWidth + 'px');
+        $(".container").height(winWidth + 'px');
+        $(".search-write-left").width((winWidth-150) + 'px');
+        $(".search-write-cont").width((winWidth-162) + 'px');
+        $(".publicSearch").css("padding-top",35*winWidth/64);
+        
+        $(".search-write-btn").click(function(){
+            var userID = $(".search-write-cont").val();
+            if(userID.length>0){
+                $.ajax({
+                    url : 'http://code.youyoucode.cn/gm/getUserInfo.php',
+                    type : "POST",
+                    dataType : "json",
+                    data : {name:userID}
+                }).done(function(msg) {
+                    if (msg.msg == 1000) {
+                        $(".search-write-cont").val("");
+                        $(".search-hint").css('visibility',"visible");
+                        document.getElementById("list-write-wrap").style.display = "block";
+                        var funcTip1 ="<h4 class='shapes-title'>通关数据</h4><ul class='shapes-ul'>";
+                        for(var i = 0; i < msg.info.length; i++){
+                            funcTip1 += "<li><span>"+"关卡ID&nbsp&nbsp"+msg.info[i]['storyID']+"&nbsp&nbsp&nbsp:&nbsp&nbsp&nbsp"+msg.info[i]['star']+"</span></li>";
+                        }
+                        funcTip1 += "</ul>";
+                        $('#list-write-wrap').append(funcTip1);
+                    }
+                });
+            }
+        });
+    });
+</script>
+</html>

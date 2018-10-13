@@ -1,0 +1,29 @@
+{
+	"groups":[
+	{
+		"keys":"language.csv,draw.csv,tool.csv,picture.csv,music.csv",
+		"name":"preload"
+	}],
+	"resources":[
+	{
+		"name":"language.csv",
+		"type":"text",
+		"url":"config/language.csv"
+	},{
+			"name":"draw.csv",
+			"type":"text",
+			"url":"config/draw.csv"
+		},{
+			"name":"picture.csv",
+			"type":"text",
+			"url":"config/picture.csv"
+		},{
+			"name":"tool.csv",
+			"type":"text",
+			"url":"config/tool.csv"
+		},{
+			"name":"music.csv",
+			"type":"text",
+			"url":"config/music.csv"
+		}]
+}

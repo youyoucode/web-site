@@ -1,0 +1,355 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>悠悠青少儿编程</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="full-screen" content="true" />
+    <meta name="screen-orientation" content="portrait" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="360-fullscreen" content="true" />
+    <meta http-equiv="Access-Control-Allow-Origin" content="*" />
+    <link rel="stylesheet" href="css/index.css" type="text/css" />
+</head>
+<body id = "bodyid">
+    <div id="banner">
+        <a href="/" target="_blank" id="logo-image" title="官网"><img src="resource/assets/logo.png" /></a>
+        <div id="toolbar-file" class="container-flex">
+            <div id="toolbar-item-file"  class="nav-chunk">
+                <div class="dropdown" id="dropdown-file">
+                    <div class="dropdown-toggle">文件<img class="icon-arrow-down" src="resource/assets/dropdown-arrow.svg"></div>
+                    <div class="dropdown-content" id="dropdown-content-file" style="display: none;">
+                        <ul>
+                            <li id='file-1'><a href="#">打开</a></li>
+                            <li id='file-7'><a href="#">导入</a></li>
+                            <li id='file-2'><a href="#">新建</a></li>
+                            <li id='file-3'><a href="#">保存</a></li>
+                            <li id='file-4'><a href="#">克隆</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="navbar-right" class="container-flex">
+            <div title="分享当前作品" id="navbar-share" class="nav-chunk">
+                <div class="dropdown" id="dropdown-share">
+                    <div class="dropdown-toggle"><img class="big-icon-arrow-down" src="resource/assets/btn_share_icon.png"></div>
+                    <div class="dropdown-content" id="dropdown-content-share" style="display: none;">
+                        <div class="toolbar-item-btn" id="Share-title" title="分享"></div>
+                        <div class="toolbar-dropdown-right-border"></div>
+                        <div class="toolbar-dropdown identify" id="share">
+                            <div id="share-identify-wrapper">
+                                <div id="share-content-text"><p>扫描二维码或复制链接</p><p>把项目分享出去</p></div>
+                                <div id="share-content-qrcode"></div>
+                                <textarea id="share-content-urltext" readonly="randonly"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div title="访问帮助网站" id="navbar-help" class="nav-chunk">
+                <div class="dropdown" id="dropdown-help">
+                    <div class="dropdown-toggle"><img class="big-icon-arrow-down" src="resource/assets/btn_help_icon.png"></div>
+                    <div class="dropdown-content" id="dropdown-content-help" style="display: none;">
+                        <ul>
+                            <li><a target="_blank" href="http://www.w3school.com.cn/js/index.asp">常见问题</a></li>
+                            <li><a target="_blank" href="http://www.w3school.com.cn/js/index.asp">javascript</a></li>
+                            <li><a target="_blank" href="http://www.gbtags.com/gb/track/HTML5%E7%94%BB%E5%B8%83.htm">canvas</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-chunk-gap">
+            </div>
+            <div id="navbar-login" class=" nav-chunk">
+                <div id="navbar-login-inner">
+                    <div id="navbar-anonymous" class="strobe" style="height: 10px;">
+                        <a target="_blank" href="/login/signup.html?redirect=www.youyoucode.cn/ide" title="创建一个账号"><span title="账号登录" id="signup-link">创建账号</span></a>
+                        <span title="账号登录" id="login-link">&nbsp&nbsp&nbsp登录&nbsp&nbsp&nbsp</span>
+                    </div>
+                </div>
+            </div>
+            <div id="finish-login" class=" nav-chunk" style="display:none">
+                <div class="dropdown" id="dropdown-login">
+                    <div class="dropdown-toggle"></div>
+                    <div class="dropdown-content" id="dropdown-content-login" style="display: none;">
+                        <ul>
+                            <li id='account-exit'><a href="#">退出</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="banner-left"></div>
+    <div id="content-left">
+        <div title="绘图函数"  id="btn-function" class="left-btn-skin">
+            <img src="resource/assets/brush.svg">
+            <span>绘图函数</span>
+        </div>
+        <div id="btn-function-content"><div class="left-arrow-tip"></div></div>
+        <div title="添加代码"  id="btn-insert" class="left-btn-skin">
+            <img src="resource/assets/code.svg">
+            <span>基础函数</span>
+        </div>
+        <div id="btn-insert-content"><div class="left-arrow-tip"></div></div>
+        <div title="素材资源"  id="btn-picture" class="left-btn-skin">
+            <img src="resource/assets/picture.svg">
+            <span>图片素材</span>
+        </div>
+        <div id="btn-picture-content"><div class="left-arrow-tip"></div></div>
+        <div title="我的课表"  id="btn-classlist" class="left-btn-skin"><img src="resource/assets/computer.svg"></div>
+    </div>
+    <div id="content-top">
+        <div id="content-top-left">
+            <div class="nav-container" id="content-top-left-in">
+                <span data-adapt-order="2" class="editor-pane-nav-title">Python</span>
+                <div title="重命名您的项目" id="navbar-project-title" class="shadow">
+                    <span id="project-title-in"></span>
+                    <input type="text" id="project-title-out" class="text-input">
+                    <span id="project-rename-save">保存</span>
+                    <span id="navbar-rename-project">
+                        <img src="resource/assets/icon_pen.png" class="icon-edit">
+                    </span>
+                </div>
+                <div class="flex-container pull-right">
+                    <div data-adapt-order="6" title="撤销您最后的编辑" id="editor-pane-nav-undo" class="editor-pane-button">
+                        <img src="resource/assets/btn_tool_undo.png">
+                    </div>
+                    <div data-adapt-order="5" title="恢复您最后的编辑" id="editor-pane-nav-redo" class="editor-pane-button">
+                        <img src="resource/assets/btn_tool_redo.png">
+                    </div>
+                    <div data-adapt-order="3" id="editor-pane-nav-snippets" title="添加库文件" class="editor-pane-button">
+                        <img src="resource/assets/btn_tool_link.png">
+                    </div>
+                    <div id="editor-pane-nav-snippets-menu" style="display: none;">
+                        <textarea  id="editor-pane-nav-snippets-menu-input"  spellcheck="false" class="text-input" style="display: inline;"></textarea>
+                        <div class="arrow-tip"></div>
+                        <button class="menu-button-confirm" id="editor-pane-nav-snippets-menu-btn">转化地址</button>
+                    </div>
+                    <div data-adapt-order="6" title="更改编辑器选项" id="editor-pane-nav-options" class="editor-pane-button">
+                        <img src="resource/assets/btn_tool_setting.png">
+                    </div>
+                    <div id="editor-pane-nav-options-menu" style="display: none;">
+                        <ul>
+                            <li id="editor-option-textsize">
+                                <span>文字大小</span>
+                                <div class="text-size-ui">
+                                    <div title="降低编辑器字体大小" id="editor-pane-nav-decrease-font" class="font-size-button"></div>
+                                    <div title="提高编辑器字体大小" id="editor-pane-nav-increase-font" class="font-size-button"></div>
+                                </div>
+                            </li>
+                            <li id="editor-option-colortheme">
+                                <span>颜色主题</span>
+                                <div id="editor-pane-nav-toggle-theme">
+                                    <div id="theme-active" style="position: absolute; left: 35px;"></div>
+                                    <div title="切换为暗色主题" id="theme-dark">
+                                        <img id="moon-white" src="resource/assets/theme-moon-white.svg" width="15px" height="15px">
+                                        <img id="moon-green" class="hidden" src="resource/assets/theme-moon-green.svg" width="15px" height="15px">
+                                    </div>
+                                    <div title="切换为亮色主题" id="theme-light">
+                                        <img id="sun-white" class="hidden" src="resource/assets/theme-sun-white.svg" width="20px" height="20px">
+                                        <img id="sun-green" src="resource/assets/theme-sun-green.svg" width="20px" height="20px">
+                                    </div>
+                                </div>
+                            </li>
+                            <li id="editor-option-grid">
+                                <span>显示网格</span>
+                                <div title="是否显示网格" class="switch-toggle switch-enabled" id="line-grid-toggle">
+                                    <div class="toggle-backing"></div>
+                                    <div class="toggle-grid-button"></div>
+                                </div>
+                            </li>
+                            <li id="editor-option-wraptext" style="display: none">
+                                <span>JS</span>
+                                <div title="切换代码程序语言" class="switch-toggle switch-enabled" id="line-wrap-toggle">
+                                    <div class="toggle-backing"></div>
+                                    <div class="toggle-button"></div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="arrow-tip"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="content-top-right">
+            <div class="nav-container">
+                <div class="preview-tutorial-toggle" data-adapt-order="1"><span title="查看预览" id="preview-title" class="preview-pane-nav-title">显示</span></div>
+                <div class="refresh-wrapper enabled" id="preview-pane-refresh-wrapper" data-adapt-order="4">
+                    <div title="刷新预览" id="preview-pane-nav-refresh"><img src="resource/assets/refresh.svg"><span>刷新</span></div>
+                    <div data-adapt-order="2" title="切换自动刷新预览" class="toggle-auto-update"><span class="checkbox"><img class="checkbox-icon" src="resource/assets/checkmark-white.svg"></span>&nbsp&nbsp自动刷新</div>
+                </div>
+                <div class="flex-container pull-right" id="content-location-text">
+                    <div data-adapt-order="3" class="preview-device-toggle"><img title="以桌面模式预览" id="preview-pane-nav-desktop" class="viewmode-active" src="resource/assets/desktop.svg"><img title="以移动模式预览" id="preview-pane-nav-phone" class="viewmode-inactive" src="resource/assets/phone-portrait.svg"></div>
+                </div>
+            </div>
+        </div>
+        <div id="menu-content-pen"></div>
+        <div id="menu-content-eraser"></div>
+    </div>
+    <div id="switch-left"><div id="switch-left-icon"></div></div>
+    <div id="content">
+        <iframe id="drawBoard" frameborder="0"></iframe>
+        <div id='game-area' class="egret-player" style="display:none" data-entry-class="Main" data-orientation="auto" data-scale-mode="noScale" data-frame-rate="30" data-content-width="45%" data-content-height="100%" data-show-paint-rect="false" data-multi-fingered="2" data-show-fps="false" data-show-log="false" data-show-fps-style="x:0,y:0,size:12,textColor:0x000000,bgAlpha:1"></div>
+        <div id="drag-line"><div id="drag-line-gap"></div></div>
+        <div id="code-area"></div>
+        <div id='problem-alert-view'></div>
+        <div id='ui-ruler' style="position: absolute;display: none">
+            <img src="resource/assets/ui_grid_head.png" width="7px" height="7px" style="position: absolute;">
+            <img src="resource/assets/ui_grid_ruler.png" width="822px" height="10px" style="position: absolute;left: 100px">
+            <img src="resource/assets/ui_grid_ruler.png" width="822px" height="10px" style="position: absolute;left: -406px;top:511px;transform: rotate(90deg)">
+        </div>
+        <div id="splash-cover"><span style="position: absolute;top: 40%;left:40%"><img src="resource/assets/loading.gif"/></span></div>
+    </div>
+    <canvas id="drawBlackboard" width="1280" height="960"></canvas>
+    <iframe id="backgroundBoardId" scrolling="no" frameborder="0" style="display:none;overflow: hidden; position: absolute; background: rgb(0, 0, 0); z-index: 9999; width: 100%; left: 0px; top: 0px; height: 100%; opacity: 0.5;" src="resource/bck.htm"></iframe>
+    <div id="open-project">
+        <div class="project-title">
+            <div class="project-title-text" id="openProject">打开</div>
+            <div class="page-close"></div>
+        </div>
+        <div id="open-project-content"></div>
+    </div>
+    <div id="new-project">
+        <div class="project-title">
+            <div class="project-title-text" id="text_new_project">新建</div>
+            <div class="page-close"></div>
+        </div>
+        <div class="input_box">
+            <input id="new-project-text" type="text" autocomplete="off" placeholder="请输入项目名称">
+            <div id="new-project-text-notice">项目名不能为空</div>
+            <div id="new-project-text-notice1">该项目名已被占用，请更改后再试</div>
+            <div id="new-project-text-notice-length">项目名过长（建议不超过20个字目）</div>
+            <div id="new-reg-input">只支持数字，字目，汉字，空格和下划线</div>
+        </div>
+        <div class="page-confirm">
+            <button class="menu-button-confirm" id="new-button-confirm-id">确认</button>
+            <button class="menu-button-cancel" id="text_new_cancel">取消</button>
+        </div>
+    </div>
+    <div id="import-project">
+        <div class="project-title">
+            <div class="project-title-text">导入</div>
+            <div class="page-close"></div>
+        </div>
+        <div class="input_box">
+            <input id="import-project-text" type="text" autocomplete="off" placeholder="请输入项目编号">
+        </div>
+        <div class="page-confirm">
+            <button class="menu-button-confirm" id="import-button-confirm-id">确认</button>
+            <button class="menu-button-cancel" id="text_import_cancel">取消</button>
+        </div>
+    </div>
+    <div id="clone-project">
+        <div class="project-title">
+            <div class="project-title-text" id="clone-window1">复制</div>
+            <div class="page-close"></div>
+        </div>
+        <div id="clone-project-title">复制当前项目后,会产生一个相同内容的项目</div>
+        <div id="clone-project-input">新项目名</div>
+        <div class="input_box">
+            <input id="clone-project-text" type="text" autocomplete="off" placeholder="请输入新的项目名称">
+            <div id="clone-project-text-notice">项目名不能为空</div>
+            <div id="clone-project-text-notice1">该项目名已被占用，请更改后再试</div>
+            <div id="clone-project-text-notice-length">项目名过长（建议不超过20个字目）</div>
+            <div id="clone-reg-input">只支持数字，字目，汉字，空格和下划线</div>
+        </div>
+        <div class="page-confirm"><button class="menu-button-confirm" id="clone-button-confirm-id">Ok</button></div>
+    </div>
+    <div id="rename-project">
+        <div class="project-title">
+            <div class="project-title-text" id="rename-window1">重命名</div>
+            <div class="page-close"></div>
+        </div>
+        <div id="rename-project-title">请输入新的项目名.</div>
+        <div id="rename-project-input">项目名称</div>
+        <div class="input_box">
+            <input id="rename-project-text" type="text" autocomplete="off" placeholder="Please input new project name">
+            <div id="rename-project-text-notice">项目名不能为空</div>
+            <div id="rename-project-text-notice1">该项目名已被占用，请更改后再试</div>
+            <div id="rename-project-text-notice-length">项目名过长（建议不超过20个字目）</div>
+            <div id="rename-reg-input">只支持数字，字目，汉字，空格和下划线</div>
+        </div>
+        <div class="page-confirm">
+            <button class="menu-button-confirm" id="rename-button-confirm-id">确认</button>
+        </div>
+    </div>
+    <div id="del-dialog" style="display: none;">
+        <div class="project-title notice-text">
+            <div class="project-title-text" id="del-dialog-notice">Notice </div>
+        </div>
+        <p class="tip-text" id="delete-project">是否要删除当前项目？</p>
+        <div class="btn-w clearfix" id="btn-w">
+            <button class="yes-btn" id="yes-btn">确认</button>
+            <button class="no-btn" id="no-btn">取消</button>
+        </div>
+    </div>
+    <div id="joinClassRoom-dialog" style="display: none;">
+        <div class="project-title notice-text">
+            <div class="project-title-text" id="joinClassRoom-dialog-notice"></div>
+        </div>
+        <p class="tip-text" id="joinClassRoom-text">Teacher codeabc invite you to study together</p>
+        <div class="btn-w clearfix">
+            <button class="yes-btn" id="yes-joinClassRoom">Confirm</button>
+            <button class="no-btn" id="no-joinClassRoom">Cancel</button>
+        </div>
+    </div>
+    <div id="loginBox" style="display: none;">
+        <div id="loginBoxGray" style="overflow: hidden; position: absolute; background: rgb(0, 0, 0); z-index: 9999; width: 100%; left: 0px; top: 0px; height: 100%; opacity: 0.3;"></div>
+        <div id="loginBoxContent">
+            <div class="login_box_right">
+                <p id="loginBoxClose"><img id="loginBoxCloseImg" src="resource/assets/login_close.png" /></p>
+                <p class="login_input"><img class="login_input_leftimg" src="resource/assets/yonghu.png" />
+                    <input id="input_Phone_Email" type="text" placeholder="手机/邮箱" />
+                </p>
+                <p class="login_input">
+                    <img class="login_input_leftimg" src="resource/assets/mima.png" />
+                    <input id="password" type="password" placeholder="密码" />
+                    <img class="login_input_rightimg eye1-student" src="resource/assets/eye1.png" />
+                    <img class="login_input_rightimg eye2-student" src="resource/assets/eye2.png" />
+                    <span class="error_info" id="login-error">账号或密码错误，请重新输入</span>
+                </p>
+                <div id="loginButton" class="login-button btn btn-awsm">登录</div>
+                <p class="login_link">
+                    <a href="http://sso.malichina.com/#/finding" target="_blank" id="resetPassword">忘记密码</a> |
+                    <a href="/login/signup.html" target="_blank" id="signUp">注册</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="system-notice-text">Error.</div>
+    <div id="titleTips"></div>
+    <div id="titleTips1"></div>
+    <div id="click-underlay" style="display:none;z-index:150;width:0px;height: 0px"></div>
+    <audio id="audio_s" src="" controls="controls" style="display: none;"></audio>
+    <!--这个标签为通过egret提供的第三方库的方式生成的 javascript 文件。删除 modules_files 标签后，库文件加载列表将不会变化，请谨慎操作！-->
+    <!--modules_files_start-->
+    <script egret="lib" src="libs/modules/egret/egret.min.js" src-release="libs/modules/egret/egret.min.js"></script>
+    <script egret="lib" src="libs/modules/egret3d/egret3d.min.js" src-release="libs/modules/egret3d/egret3d.min.js"></script>
+    <script egret="lib" src="libs/modules/egret/egret.web.min.js" src-release="libs/modules/egret/egret.web.min.js"></script>
+    <script egret="lib" src="libs/modules/game/game.min.js" src-release="libs/modules/game/game.min.js"></script>
+    <script egret="lib" src="libs/modules/game/game.web.min.js" src-release="libs/modules/game/game.web.min.js"></script>
+    <script egret="lib" src="libs/modules/res/res.min.js" src-release="libs/modules/res/res.min.js"></script>
+    <script egret="lib" src="libs/modules/socket/socket.min.js" src-release="libs/modules/socket/socket.min.js"></script>
+    <script egret="lib" src="libs/modules/greensock/greensock.min.js" src-release="libs/modules/greensock/greensock.min.js"></script>
+    <script egret="lib" src="libs/modules/qrcode/qrcode.min.js" src-release="libs/modules/qrcode/qrcode.min.js"></script>
+    <script egret="lib" src="libs/modules/pomelo/PomeloClient.js" src-release="libs/modules/pomelo/PomeloClient.js"></script>
+    <!--modules_files_end-->
+    <!--这个标签为不通过egret提供的第三方库的方式使用的 javascript 文件，请将这些文件放在libs下，但不要放在modules下面。-->
+   <!--other_libs_files_start-->
+    <script egret="lib" src="polyfill/promise.js" src-release="polyfill/promise.min.js"></script>
+    <!--other_libs_files_end-->
+    <script src="lib/ace/zatanna/zatanna.js"></script>
+    <script src="lib/ace/ace.js"></script>
+    <script src="lib/aether-plugin/lodash/lodash.min.js"></script>
+    <script src="lib/aether-plugin/esper.min.js"></script>
+    <script src="lib/aether-lib/mali-aether/aether.min.js"></script>
+    <script src="dist/ide-bundle.js?v=Math.random()"></script>
+    <script src="lib/worker.js"></script>
+    <script src="libs/jquery.min.js"></script>
+    <script src="libs/marked.min.js"></script>
+    <script src="libs/modules/jmd5/jquery.md5.js"></script>
+</body>
+</html>

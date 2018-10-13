@@ -1,0 +1,66 @@
+.main_div {
+	width:70%;
+	height:390px;
+	margin:0px auto;
+	padding-top:0px;
+}
+.class_ul {
+	list-style: none;
+	padding:0;
+	margin:0;
+}	 
+.class_list {
+	
+}
+.block {
+	list-style: none;
+	width:28%;
+	height:120px;
+	line-height: 120px;
+	margin-top:20px;
+	margin-left:4%;
+	float:left;	
+	background-color: #70BBB5;
+	text-align:center;
+	color: white;
+	font-size: 22px;
+	text-decoration:none;
+	border-radius:5px;
+}
+
+.nav	{
+	height:70px;
+	line-height: 70px;
+	background-color: #70BBB5;
+	padding:0;
+	margin:0;
+
+}
+
+.nav_box {
+	margin:0px auto;
+	width:70%;
+}
+
+#logo	{
+	width:134px;
+	height:70px;
+	background-image: url();
+	float:left;
+}
+
+.nav_menu	{
+	list-style: none;
+	float:right;
+}
+.nav_li {
+	float:right;
+	margin-left:30px;
+	height:70px;
+	line-height: 40px;
+}
+.nav_text {
+	font-size: 18px;
+	color: white;
+	text-decoration: none;
+}

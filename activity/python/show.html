@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>悠悠青少儿编程</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="full-screen" content="true" />
+    <meta name="screen-orientation" content="portrait" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="360-fullscreen" content="true" />
+    <link rel="stylesheet" href="css/show.css" type="text/css" />
+    <!--这个标签为通过egret提供的第三方库的方式生成的 javascript 文件。删除 modules_files 标签后，库文件加载列表将不会变化，请谨慎操作！-->
+    <!--modules_files_start-->
+    <script egret="lib" src="libs/modules/egret/egret.min.js" src-release="libs/modules/egret/egret.min.js"></script>
+    <script egret="lib" src="libs/modules/egret/egret.web.min.js" src-release="libs/modules/egret/egret.web.min.js"></script>
+    <script egret="lib" src="libs/modules/game/game.min.js" src-release="libs/modules/game/game.min.js"></script>
+    <script egret="lib" src="libs/modules/res/res.min.js" src-release="libs/modules/res/res.min.js"></script>
+    <script egret="lib" src="libs/modules/socket/socket.min.js" src-release="libs/modules/socket/socket.min.js"></script>
+    <script egret="lib" src="libs/modules/greensock/greensock.min.js" src-release="libs/modules/greensock/greensock.min.js"></script>
+    <script egret="lib" src="libs/modules/qrcode/qrcode.min.js" src-release="libs/modules/qrcode/qrcode.min.js"></script>
+    <script egret="lib" src="libs/modules/pomelo/PomeloClient.js" src-release="libs/modules/pomelo/PomeloClient.js"></script>
+    <script egret="lib" src="libs/modules/nimweb/NIM_Web_NIM.js" src-release="libs/modules/nimweb/NIM_Web_NIM.js"></script>
+    <script egret="lib" src="libs/modules/nimweb/NIM_Web_Netcall.js" src-release="libs/modules/nimweb/NIM_Web_Netcall.js"></script>
+    <!--modules_files_end-->
+    <!--这个标签为不通过egret提供的第三方库的方式使用的 javascript 文件，请将这些文件放在libs下，但不要放在modules下面。-->
+    <!--other_libs_files_start-->
+    <script egret="lib" src="polyfill/promise.js" src-release="polyfill/promise.min.js"></script>
+    <!--other_libs_files_end-->
+    <script type="text/javascript" id ="shows"></script>
+</head>
+<body>
+    <div id="content">
+        <iframe id="drawBoard" frameborder="0" style="width:600px;height: 800px;"></iframe>
+        <div id='game-area' class="egret-player" data-entry-class="Main" data-orientation="auto" data-scale-mode="showAll" data-frame-rate="30" data-content-width="960" data-content-height="1400" data-show-paint-rect="false" data-multi-fingered="2" data-show-fps="false" data-show-log="false" data-show-fps-style="x:0,y:0,size:12,textColor:0xffffff,bgAlpha:0"></div>
+        <div id="code-area"></div>
+        <!-- 错误提示框 -->
+        <div id='problem-alert-view'></div>
+        <!-- 战斗中方法提示 -->
+        <div id="codeTipData" class="hidden"></div>
+        <textarea id="editor-pane-nav-snippets-menu-input" class="hidden"></textarea>
+        <div id="splash-cover" style="display: none"><span style="position: absolute;top: 30%;left:43%"><img src="resource/assets/loading.gif"/></span></div>
+    </div>
+    <div id="showContent"></div>
+    <script src="lib/ace/zatanna/zatanna.js"></script>
+    <script src="lib/ace/ace.js"></script>
+    <script src="lib/aether-plugin/lodash/lodash.min.js"></script>
+    <script src="lib/aether-plugin/esper.min.js"></script>
+    <script src="lib/aether-lib/commonjs-mode/aether.js"></script>
+    <script src="dist/ide-bundle.js"></script>
+    <script src="lib/worker.js"></script>
+    <script src="libs/jquery.min.js"></script>
+    <script src="libs/marked.min.js"></script>
+    <script src="lib/show-resize.js"></script>
+</body>
+
+</html>

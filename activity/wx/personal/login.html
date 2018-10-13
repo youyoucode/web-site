@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=0">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no,email=no" />
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <script src="./js/flexible_b5d6ba8.js"></script>
+    <script src="./js/jquery.min.js"></script>
+    <link rel="stylesheet" href="./common/css/palfish-mobile_058909e.css">
+    <link rel="stylesheet" href="./login_ee01d07.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <h2 class="title">
+            登录账号
+        </h2>
+        <div class="input-wrapper">
+            <div class="phone-wrapper" id="js-user-name">
+                <input type="text" class="phone" placeholder="输入用户名或手机号">
+                <img src="./login/phone_ae4201c.png" alt="">
+            </div>
+            <div class="password-wrapper" id="js-password">
+                <input type="password" class="password" placeholder="输入密码">
+                <img src="./login/password_46cdde0.png" alt="">
+            </div>
+        </div>
+        <div class="js-login-wrapper" id="js-submit-btn">
+            悠悠编程账号登录
+        </div>
+    </div>
+</body>
+<!-- <script src="./js/app_b6ece0e.js"></script> -->
+<script src="./js/palfish-ui_dba85da.js"></script>
+
+<script>
+    $().ready(
+        function() {
+
+            var mali_username = getCookie("mali-username");
+            var mali_mobile = getCookie("mali-mobile");
+            console.log("11111" + mali_username);
+            console.log("22222" + mali_mobile);
+            if (mali_username != null && mali_username != "undefined") {
+
+                if (window.location.href.indexOf("redirect=") >= 0) {
+
+                    var vals = window.location.href.split("redirect=");
+                    window.location.replace("http://" + vals[1] + "?id=" + mali_username);
+                }
+            } else if (mali_mobile != null && mali_mobile != "undefined") {
+
+                if (window.location.href.indexOf("redirect=") >= 0) {
+
+                    var vals = window.location.href.split("redirect=");
+                    window.location.replace("http://" + vals[1] + "?mobile=" + mali_mobile);
+                }
+            }
+
+        }
+    );
+    document.getElementById("js-submit-btn").onclick = function(e) {
+        var mobile = $("#js-user-name .phone").val();
+        var password = $("#js-password .password").val();
+
+        function isEmail(str) {
+            var reg = /^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(.[a-zA-Z0-9_-])+/
+            return reg.test(str)
+        }
+
+        function isMobilePhone(str) {
+            var myreg = /^(((13[0-9]{1})|(14[0-9]{1})|(15[0-9]{1})|(17[0-9]{1})|(18[0-9]{1}))+\d{8})$/
+            return myreg.test(str)
+        }
+
+        if (mobile.length > 0) {
+            //$("#js-user-name .message").css('visibility', "hidden");
+            if (password.length > 0) {
+                //var user = {password: password,username:null};
+                var user;
+                if (isEmail(mobile)) {
+                    user = {
+                        password: password,
+                        email: mobile
+                    };
+                    user.email = mobile;
+                } else if (isMobilePhone(mobile)) {
+                    user = {
+                        password: password,
+                        email: mobile
+                    };
+                    user.email = mobile;
+                } else {
+                    user = {
+                        password: password,
+                        username: mobile
+                    };
+                    user.username = mobile;
+                }
+                $("#js-submit-btn").text("登录中...");
+                //$("#js-submit-btn").val("登录中...").addClass("btn-disabled").attr("disabled", "disabled");
+                $.ajax({
+                    url: "http://sso.malichina.com/api/users/login",
+                    type: "post",
+                    data: user,
+                    dataType: "json",
+                    success: function(data) {
+                        if (data.userId) {
+                            //$("#js-password .message").css('visibility', "hidden");
+
+
+                            setCookie("mali-username", user.username);
+                            setCookie("mali-mobile", user.email);
+
+                            if (user.username != null && user.username != "undefined") {
+
+                                if (window.location.href.indexOf("redirect=") >= 0) {
+
+                                    var vals = window.location.href.split("redirect=");
+                                    window.location.replace("http://" + vals[1] + "?id=" + user.username);
+                                }
+                            } else if (user.email != null && user.email != "undefined") {
+
+                                if (window.location.href.indexOf("redirect=") >= 0) {
+
+                                    var vals = window.location.href.split("redirect=");
+                                    window.location.replace("http://" + vals[1] + "?mobile=" + user.email);
+                                }
+                            }
+
+
+                            // if (window.location.href.indexOf("redirect=") >= 0) {
+                            //     var vals = window.location.href.split("redirect=");
+                            //     window.location.replace("http://" + vals[1] + "?mobile=" + user.email);
+                            // } else window.location.replace("/");
+                        } else {
+                            //$("#js-password .message").css('visibility', "visible");
+                        }
+                    },
+                    error: function(err) {
+                        alert("请输入正确的用户名和密码");
+                        $(".phone").val("");
+                        $(".password").val("");
+                        $("#js-submit-btn").text("悠悠编程账号登录");
+                        //$("#js-password .message").css('visibility', "visible");
+                    }
+                });
+
+            } else {
+                alert("密码不能为空");
+                //$("#js-password .message").css('visibility', "visible");
+            }
+        } else {
+            alert("用户名不能为空");
+            //$("#js-user-name .message").css('visibility', "visible");
+            //$("#js-password .message").css('visibility', "hidden");
+        }
+    }
+
+
+    function setCookie(name, value) {
+        var Days = 30;
+        var exp = new Date();
+        exp.setTime(exp.getTime() + Days * 24 * 60 * 60 * 30);
+        document.cookie = name + "=" + escape(value) + ";expires=" + exp.toGMTString();
+    }
+
+    function getCookie(name) {
+        var arr, reg = new RegExp("(^| )" + name + "=([^;]*)(;|$)");
+        if (arr = document.cookie.match(reg))
+            return unescape(arr[2]);
+        else
+            return null;
+    }
+</script>
+
+</html>

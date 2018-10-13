@@ -1,0 +1,46 @@
+*{margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+body{font-family:"microsoft yahei","å¾®è½¯é›…é»‘",Arial,"hiragino sans gb";color:#505050}
+input{color:#505050;height:1.1rem;line-height:.8rem;text-align:left;font-size:.4rem!important;border:1px solid #d0d0d0;border-radius:.1rem;box-sizing:border-box;padding:.2rem .25rem;text-indent:.25rem;outline:0}
+input:-webkit-autofill{-webkit-box-shadow:0 0 0 1000px #fff inset}
+input[type=button]{border:0;text-align:center;cursor:pointer;-webkit-appearance:none}
+input[type=text]{outline:0;-webkit-appearance:none;-webkit-tap-highlight-color:rgba(0,0,0,0)}
+ul li{list-style:none}
+.button{height:1.1rem;box-sizing:border-box;border-style:none;border-radius:.1rem;color:#fff;text-align:center;line-height:1.1rem;padding-left:.25rem;padding-right:.25rem;cursor:pointer;font-size:.4rem}
+#login-modal #login{line-height:0}
+#area{box-sizing:border-box;display:inline-block;width:1.5rem;height:1.1rem;line-height:1.1rem;background-color:#fff;border-radius:.1rem;margin-right:.2rem;text-align:center;font-size:.4rem}
+#phone{width:5.3rem}
+#signup-btn{line-height:.8rem}
+#wechat-login-btn{line-height:0}
+.yellow-bg{background-color:#f90!important}
+.yellow{color:#f90!important}
+.green-bg{background-color:#02bd00!important}
+.green{color:#02bd00!important}
+.green-border{border:1px solid #02bd00!important}
+.blue-gray{color:#576a7c!important}
+.blue-gray-bg{background-color:#576a7c!important}
+.border{border:1px solid #d0d0d0;border-radius:.1rem}
+.modal{width:7rem;padding:.5rem .5rem .375rem;background:#efefef;position:absolute;left:50%;top:0;-webkit-transform:translate(-50%,0);-ms-transform:translate(-50%,0);transform:translate(-50%,0);border-radius:.1rem;outline:0;border:0;z-index:200}
+.modal input{background:#fff;margin-bottom:.5rem;outline:0;border:0;width:100%}
+.modal .title{margin-bottom:.375rem;text-align:center;font-size:.5rem}
+.modal .tip{text-align:right;font-size:.325rem}
+.link{color:#576d96;cursor:pointer}
+.auto{width:auto!important}
+.right{float:right!important;width:auto}
+.disable{opacity:.6;cursor:default}
+.small-btn{width:2.6rem}
+.hide{display:none}
+input::placeholder{color:#929292;font-size:.4rem}
+.palfish-mask{width:100%;height:100%;position:fixed;left:0;top:0;z-index:100;background:rgba(0,0,0,.4)}
+.palfish-alert{position:fixed;left:50%;top:50%;z-index:500;-webkit-transform:translate(-50%,-50%);-moz-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);transform:translate(-50%,-50%);background:#f8f8f8;padding:.75rem;border-radius:.1rem;min-width:5rem}
+.palfish-alert .text{font-size:.4rem}
+.palfish-close{position:absolute;top:0;right:0;font-size:.55rem;padding:.1rem .2rem .25rem .25rem;cursor:pointer;width:1rem;height:40px;background:url(/klian/web/dist/common/images/close_icon_1ac7057.png) no-repeat 1rem 15px;background-size:.2rem .2rem;text-align:right}
+.palfish-toast{position:fixed;z-index:10000;left:0;top:50%;width:100%;-webkit-transform:translate(0%,-50%);-moz-transform:translate(0%,-50%);-ms-transform:translate(0%,-50%);transform:translate(0%,-50%);text-align:center;opacity:1}
+.palfish-toast-wrapper{max-width:70%;box-sizing:border-box;padding:.13333rem .2rem;border-radius:.1rem;background:rgba(0,0,0,.75);color:#fff;font-size:.4rem;display:inline-block}
+.toast-animation{opacity:0;transition:opacity 2s 1s;-webkit-transition:opacity 2s 1s}
+#country{display:none;position:absolute;top:0;left:0;z-index:201;width:100%;background:#fff}
+#closelist{position:relative;height:1.375rem;line-height:1.375rem;border-bottom:1px solid #d0d0d0;font-size:.5rem;text-align:center}
+.countrylist{overflow:hidden;font-size:.5rem;color:#505050}
+#closelist span{display:block;position:absolute;left:0;width:1.375rem}
+#country ul li{list-style:none}
+#country ul{float:left;width:100%;margin-left:.46875rem}
+#country li{height:1.375rem;line-height:1.375rem;border-bottom:1px solid #d0d0d0}

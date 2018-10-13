@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="index.css">
+<style>
+.class_list {
+	list-style: none;
+	width:88%;
+	height:40px;
+	line-height: 40px;
+	background-color: #FFFFFF;
+	margin-top:10px;
+	margin-left:4%;
+	padding:0px 2%;
+	float:left;
+	text-align:left;
+	color: black;
+	border: solid #70BBB5;
+	border-width:1px;
+}
+
+.dl_btn {
+	width:auto;
+	height:30px;
+	line-height: 30px;
+	margin-top:5px;
+	margin-left:5px;
+	padding:0 8px;
+	float:right;
+	text-align:center;
+	color: white;
+	font-size: 14px;
+	background-color: #70BBB5;
+	border-radius:5px;
+}
+</style>
+</head>
+<body style="margin:0; padding:0;">
+<div class="nav">
+	<div class="nav_box">
+		<a href="./all_class.html"><div id="logo" ></div></a>
+		<ul class="nav_menu">
+			<!--li class="nav_li">
+				<a class="nav_text" href="./resource.html">素材库</a>
+			</li
+			<li class="nav_li">
+				<a class="nav_text" href="./other_files.html">资料库</a>
+			</li>-->
+			<li class="nav_li">
+				<a class="nav_text" href="./wiki.html">知识库</a>
+			</li>
+			<li class="nav_li">
+				<a class="nav_text" href="./all_class.html">课程表</a>
+			</li>
+			<li class="nav_li">
+				<a class="nav_text" href="./all_class.html">课程内容</a>
+			</li>
+		</ul>
+	</div>
+</div>
+<div class="main_div">
+    <ul class="class_ul">
+    	<li class="class_list">
+    		<a class="a_text" href="http://ou1htxdl4.bkt.clouddn.com/pdf/code%20the%20future.pdf" target="_blank">《Code the future》</a>
+	    	<input type="button" class="dl_btn" value="下载文件" onclick="clickDownload('http://ou1htxdl4.bkt.clouddn.com/pdf/code%20the%20future.pdf')"></input>
+    	</li>
+    	<li class="class_list">
+    		<a class="a_text" href="https://ks.wjx.top/jq/16811989.aspx" target="_blank">《学生水平测试表》</a>
+	    	<input type="button" class="dl_btn" value="下载文件" onclick="clickDownload('http://ou1htxdl4.bkt.clouddn.com/LLCS/files/%E5%AD%A6%E7%94%9F%E6%B0%B4%E5%B9%B3%E6%B5%8B%E8%AF%95.doc')"></input>
+    	</li>
+
+    </ul>
+</div>
+
+<script>
+	function clickDownload(file) {
+   		window.open(file);
+	}
+</script>
+</body>
+</html>

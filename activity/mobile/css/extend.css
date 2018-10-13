@@ -1,0 +1,592 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+.tips{
+    font-size:12px;
+    text-align: center;
+    color: #d00;
+    border:1px solid rgba(255,0,0,.2);
+    width: 0;
+    height: 0;
+    line-height: 3rem;
+    margin: 5px 0 10px 10%;
+    border-radius: 5px;
+}
+.shade{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 9999999999;
+    display: none;
+}
+a:visited{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    color: white;
+    text-decoration: none;
+}
+a,input[type='submit']{
+    font-size: 16px;
+    text-decoration: none;
+    outline: none;
+}
+.container{
+    padding: 0;
+}
+.demoLesson{
+    background-color: #ffa225;
+    color: white;
+    font-size: 18px;
+    width: 60%;
+    text-align: center;
+    height: 4rem;
+    line-height: 4rem;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+.top_banner{
+    overflow: hidden;
+    position: relative;
+    background: url("../images/extend_img/top_banner.jpg") no-repeat left top;
+    background-size: 100% 100%;
+}
+.top_down{
+    width: 3.5rem;
+    display: block;
+    position: absolute;
+    bottom: 0.5rem;
+    left: 50%;
+    margin-left: -1.75rem;
+}
+.logo{
+    width: 4rem;
+    margin: 1.8rem;
+}
+.top_tel{
+    width: 12rem;
+    margin: 0.85rem;
+    float: right;
+}
+.lessonForm{
+    overflow: hidden;
+    position: relative;
+    background-color: #70b9b3;
+}
+.lessonForm .lesson_down{
+    width: 3.5rem;
+    position: absolute;
+    bottom: 1.5rem;
+    left: 50%;
+    margin-left: -1.8rem;
+}
+.enrollLesson{
+    width: 94%;
+    margin: 0 auto;
+    margin-top: 3rem;
+    background: url("../images/extend_img/lessonForm_bg.png") no-repeat left top;
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+.enrollLesson p{
+    margin: 0;
+}
+.main_Lform{
+    width: 94%;
+    height: 88%;
+    margin: 1rem auto 8rem auto;
+    background: url("../images/extend_img/lessonForm_bg.png") no-repeat left top;
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+.contain_logo{
+    width: 10rem;
+    height: 8.5rem;
+    position: absolute;
+    top: 2rem;
+    left: 50%;
+    margin-left: -5rem;
+}
+.contain_logo img{
+    width: 80%;
+    margin: 10%;
+}
+.enrollLesson .contain_logo{
+    top: 1rem;
+}
+.main_Lform input,.main_Lform select,.enrollLesson input{
+    width: 80%;
+    height: 3.75rem;
+    line-height: 3.75rem;
+    margin-left: 10%;
+    margin-top: 1.5rem;
+    border: 1px solid #ccc;
+    padding-left: 5px;
+    border-radius: 5px;
+}
+.main_Lform p{
+    text-align: center;
+    font-size: 18px;
+    line-height: 2.4rem;
+    margin: 0;
+}
+.lessonTitle_1{
+    color: #429fd9;
+    margin-top: 5rem !important;
+}
+.lessonTitle_2{
+    color: #282727;
+    letter-spacing: 0.45rem;
+}
+.lessonTitle_3{
+    font-weight: bold;
+    color: #429fd9;
+    font-size: 30px !important;
+    margin-bottom: 1rem !important;
+    letter-spacing: 0.3rem;
+}
+.enrollLesson .meansTitle{
+    text-align: center;
+    font-size: 26px;
+    color: #269fd9;
+    font-weight: bold;
+}
+.enrollLesson .meansTitle_1{
+    text-align: center;
+    font-size: 13px;
+    margin: 1px;
+}
+.meansTitle:nth-of-type(1){
+    margin-top: 6rem;
+}
+.meansTitle:nth-of-type(2){
+    margin-top: -3px;
+}
+.main_Lform .child_name,.enrollLesson .child_name{
+    margin-top: 0;
+}
+.verifyInp{
+    width: 45% !important;
+}
+.submit{
+    background-color: #ffa225;
+    display: block;
+    color: white;
+    border: none;
+    margin: 3.5rem 10%;
+}
+.enrollLesson .demoLesson{
+    margin-bottom: 1.5rem
+}
+.question p{
+    text-align: center;
+    margin: 0;
+}
+.question ul{
+    margin-top: 2.4rem;
+    margin-left: 3.2rem;
+}
+.question ul li{
+    letter-spacing: 1px;
+    line-height: 2.5rem;
+}
+.question ul li span{
+    font-size: 18px;
+    font-weight: bold;
+}
+.question ul li img{
+    width: 2rem;
+}
+.teacher{
+    overflow: hidden;
+    position: relative;
+    background-size: 100% 100%;
+}
+.teacher_Lform{
+    width: 94%;
+    height: 94%;
+    margin: 1rem auto 8rem auto;
+    background: url(../images/extend_img/class_info.jpg) no-repeat center center;;
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+.q_one{
+    font-size: 20px;
+    margin-top: 2.8rem !important;
+}
+.q_two{
+    color: #47b4a9;
+    font-weight: bold;
+    font-size: 30px;
+}
+.q_thr{
+    color: #47b4a9;
+    font-size: 20px;
+}
+.label_con{
+    background:#f9f8f7 url("../images/extend_img/label_bg.png") no-repeat left top;
+    background-size: contain;
+    overflow: hidden;
+}
+.label_diff{
+    margin: 0 2.5rem;
+}
+.label_diff img{
+    width: 100%;
+    height: 100%;
+    margin-top: 12rem;
+}
+.label_up{
+    margin: 0 2.5rem;
+    overflow: hidden;
+    background-color: #e4eff5;
+}
+.label_uHead{
+    height: 4rem;
+    background-color: #4dd5dc;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    position: relative;
+    line-height: 4rem;
+}
+.label_uHead:before{
+    position: absolute;
+    top: 4rem;
+    left: 50%;
+    content: " ";
+    display: block;
+    width: 0;
+    margin-left: -1.6rem;
+    height: 0;
+    border:1.6rem solid;
+    border-color:#4dd5dc transparent transparent transparent;
+}
+.l_label{
+    color: white;
+    text-align: center;
+    line-height: 3rem;
+    font-size: 14px;
+    height: 3rem;
+    width: 9rem;
+    margin-top: 1.2rem;
+}
+.label_up .up_con:nth-of-type(1),.label_down .up_con:nth-of-type(1){
+    margin-top: 1.2rem;
+}
+.lu{
+    background-color: #2ba0e9;
+    box-shadow: 0 5px 6px #b7d2e0;
+}
+.ld{
+    background-color: #fda819;
+    box-shadow: 0 5px 6px #cec2bc;
+}
+.label_down{
+    margin: 0 2.5rem;
+    overflow: hidden;
+    background-color: #e4eff5;
+}
+.up_con{
+    display: flex;
+    -webkit-justify-content:space-between;
+    -o-justify-content:space-between;
+    -moz-justify-content:space-between;
+    -ms-justify-content:space-between;
+    justify-content: space-between;
+}
+.label_dHead{
+    height: 4rem;
+    background-color: #fda819;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 4rem;
+    position: relative;
+}
+.label_dHead:before{
+    position: absolute;
+    top: 4rem;
+    left: 50%;
+    content: " ";
+    display: block;
+    width: 0;
+    margin-left: -1.6rem;
+    height: 0;
+    border:1.6rem solid;
+    border-color:#fda819 transparent transparent transparent;
+}
+.label_footer{
+    width: 90%;
+    height: 7rem;
+    margin-left: 5%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #89d1f9;
+    margin-bottom: 2rem;
+}
+.footerBtn{
+    width: 40%;
+    height: 4rem;
+    display: inline-block;
+    margin: 1.5rem 4.5%;
+    border: none;
+    text-align: center;
+    line-height: 4rem;
+    outline: none;
+    border-radius: 0.5rem;
+    color: white;
+}
+.abstract{
+    background: url("../images/extend_img/abstract_bg.png") no-repeat left top;
+    background-size: cover;
+}
+.abstract_con{
+    width: 80%;
+    overflow: hidden;
+    margin-left: 10%;
+}
+.abstract_con h2{
+    color: white;
+    margin-top: 3rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+.abstract_con p{
+    color: white;
+    margin-bottom: 3rem;
+    line-height: 2rem;
+}
+.wxCode{
+    background-color: #313131;
+    overflow: hidden;
+}
+.wxCode p{
+    text-align: center;
+    font-size: 21px;
+}
+.wxCode p:nth-of-type(1){
+    color: white;
+    margin-top: 2rem;
+}
+.wxCode .wxCode_tel{
+    color: #fecc04 !important;
+    font-weight: bold;
+    margin: 1.2rem;
+}
+.wxCode img{
+    display: block;
+    width: 12rem;
+    margin: 2rem auto;
+}
+.wxCode .officialImg{
+    width: 5rem;
+}
+.close{
+    margin-left: 94%;
+    width: 3rem;
+}
+.footer{
+    height: 5rem;
+    background-color: #1b1b1b;
+}
+.footer p{
+    text-align: center;
+    line-height: 5rem;
+    color: #cecece;
+    margin: 0;
+    font-size: 10px;
+}
+@media screen and (max-width: 320px){
+    body{
+        font-size: 12px;
+    }
+    a{
+        font-size: 18px;
+    }
+    .label_diff img{
+        margin-top: 9rem;
+    }
+    .main_Lform .submit{
+        margin: 2.5rem 10%;
+    }
+    .lessonTitle_3{
+        font-size: 26px !important;
+    }
+    .question ul li span{
+        font-size: 16px;
+    }
+}
+@media screen and (min-width: 321px) and (max-width: 375px){
+    body{
+        font-size: 14px;
+    }
+    a{
+        font-size: 18px;
+    }
+    .label_up .up_con:nth-of-type(1),.label_down .up_con:nth-of-type(1){
+        margin-top: 1.5rem;
+    }
+    .contain_logo{
+        width: 10rem;
+        height: 10rem;
+        top: 1rem;
+        margin-left: -5rem;
+    }
+    .main_Lform p{
+        font-size: 21px;
+    }
+    .label_diff img{
+        margin-top: 11rem;
+    }
+    .lessonTitle_1{
+        margin-top: 9rem !important;
+    }
+    .lessonTitle_2{
+        letter-spacing: 0.5rem;
+    }
+    .lessonTitle_3{
+        font-size: 31px !important;
+    }
+    .main_Lform p{
+        line-height: 3.6rem;
+    }
+    .main_Lform input,.main_Lform select{
+        margin-top: 1.2rem;
+    }
+    .l_label{
+        height: 4rem;
+        width: 12rem;
+        line-height: 4rem;
+        font-size: 16px;
+    }
+    .label_uHead{
+        height: 4.5rem;
+        font-size: 22px;
+        line-height: 4.5rem;
+    }
+    .label_uHead:before{
+        top: 4.5rem;
+    }
+    .label_dHead{
+        height: 4.5rem;
+        font-size: 22px;
+        line-height: 4.5rem;
+    }
+    .label_dHead:before{
+        top: 4.5rem;
+    }
+    .verify{
+        margin-bottom: 2.5rem;
+    }
+    .meansTitle:nth-of-type(1){
+        margin-top: 8rem;
+    }
+    .enrollLesson .demoLesson{
+        margin-bottom: 2.5rem;
+    }
+    .question ul{
+        margin-left: 4.8rem;
+    }
+    .question ul li{
+        font-size: 14px;
+        line-height: 3rem;
+    }
+}
+@media screen and (min-width: 376px){
+    body{
+        font-size: 14px;
+    }
+    a{
+        font-size: 18px;
+    }
+    p{
+        margin-bottom: 3px;
+    }
+    .label_up .up_con:nth-of-type(1),.label_down .up_con:nth-of-type(1){
+        margin-top: 1.8rem;
+    }
+    .contain_logo{
+        width: 8rem;
+        height: 8rem;
+        top: 1.5rem;
+        margin-left: -4rem;
+    }
+    .main_Lform p{
+        font-size: 22px;
+        line-height: 4rem;
+    }
+    .main_Lform input,.main_Lform select{
+        margin-top: 2.4rem;
+    }
+    .lessonTitle_1{
+        margin-top: 9rem !important;
+    }
+    .lessonTitle_3{
+        font-size: 32px !important;
+    }
+    .meansTitle:nth-of-type(1){
+        margin-top: 10rem;
+    }
+    .enrollLesson input{
+        margin-top: 2.4rem;
+    }
+    .enrollLesson .meansTitle{
+        font-size: 30px;
+    }
+    .enrollLesson .meansTitle_1{
+        font-size: 14px;
+    }
+    .enrollLesson .demoLesson{
+        margin-bottom: 3.5rem;
+    }
+    .l_label{
+        width: 11rem;
+        height: 4rem;
+        line-height: 4rem;
+        font-size: 18px;
+    }
+    .up_con{
+        margin-top: 1rem;
+    }
+    .label_dHead,label_uHead{
+        font-size: 20px;
+    }
+    .question ul{
+        margin-left: 5rem;
+    }
+    .question ul li{
+        font-size: 15px;
+        line-height: 4rem;
+    }
+    .question ul li span{
+        font-size: 20px;
+    }
+
+    .label_uHead{
+        height: 5rem;
+        font-size: 22px;
+        line-height: 5rem;
+    }
+    .label_uHead:before{
+        top: 5rem;
+    }
+    .label_dHead{
+        height: 5rem;
+        font-size: 22px;
+        line-height: 5rem;
+    }
+    .label_dHead:before{
+        top: 5rem;
+    }
+}

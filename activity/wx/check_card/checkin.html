@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>悠悠编程课程打卡行动</title>
+    <meta content="width=device-width, user-scalable=no,initial-scale=1.0" name="viewport">
+    <script src="./common/vendor/flexible_b5d6ba8.js"></script>
+    <script src="./js/jquery.min.js"></script>
+    <link href="./common/css/palfish-mobile_058909e.css" rel="stylesheet">
+    <link href="./css/flex_2e34a35.css" rel="stylesheet">
+    <link href="./css/checkin_50ae0fb.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="pic-top-wrapper"><img alt="" src="./images/clock_spirit_a24eea4.png"></div>
+        <div class="checkin-wrapper">
+            <div class="checkin-content">
+                <h3 class="title">连续打卡，获取超值大礼</h3>
+                <div class="date-wrapper">
+                    <!-- <span class="date-content"><a class="go-checkin"
+             id="clock"
+             name="clock">1</a></span> <span class="date-content"><a class="go-checkin"
+             id="clock"
+             name="clock">2</a></span> <span class="date-content"><a class="go-checkin"
+             id="clock"
+             name="clock">3</a></span> <span class="date-content"><a class="go-checkin"
+             id="clock"
+             name="clock">4</a></span> <span class="date-content"><a class="go-checkin"
+             id="clock"
+             name="clock">5</a></span> -->
+                </div>
+            </div>
+        </div>
+        <div class="activity-attend-notice">
+            <!-- 补打卡 -->
+            <div class="mend-checkin-mask">
+                <div class="mend-checkin-wrapper">
+                    <p>是否花费500贝壳补的未打卡吗？</p>
+                    <div class="btn-wrapper">
+                        <span class="btn cancel-btn">取消</span> <span class="btn ok-btn">确定</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg" id="bg" style="display:none;"></div>
+        <!-- <script src="./js/app_b6ece0e.js"></script> -->
+        <script src="./common/js/palfish-ui_dba85da.js"></script>
+        <!-- <script src="./js/checkin_5ca16bd.js"></script> -->
+
+        <script type="text/javascript">
+            var baseurl = "/ide/show.php?" + "v=20549";
+            var content = "";
+
+
+            for (var n = 1; n < 49; n++) {
+                content += '<span class="date-content"><a class="go-checkin" id = "clock" name = "clock" >' + n + '<\/a><\/span>';
+
+            }
+            $(".date-wrapper").html(content);
+            $(".go-checkin").attr('href', baseurl);
+        </script>
+    </div>
+</body>
+
+</html>

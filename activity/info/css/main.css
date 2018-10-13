@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+
+.container {width: 570px;height: 570px;background: url("../images/bg.jpg") no-repeat left top;background-size: 100% 100%;}
+.publicSearch {padding-top: 220px;padding-left: 30px;width: 570px;z-index: 1;}
+
+.search-write-left {width: 350px; border: solid #c6cede; height: 38px; border-width: 1px 0px 1px 1px; border-image: none; background: #FFF; vertical-align: top; overflow: hidden;display: inline-block;font: 16px arial;margin: 0;zoom: 1;float: left;}
+.search-write-cont{width: 338px; height: 25px; margin: 6px 0px 0px 10px; padding: 0px; background: transparent none repeat scroll 0% 0%; border: 0px none; outline: 0px none;line-height: 25px;}
+.search-write-btn{width:64px; background:#55a7e3; color:#fff;font-size: 18px;height:34px;padding-top: 6px;padding-left: 26px;border: 0px none;cursor: pointer;}
+.search-write-btn:hover{background-color:#2f87c1;}
+.search-write-right {width: 90px;display: inline-block;font: 16px arial;margin: 0;zoom: 1;float: left;}
+.search-write-wrap {margin: 0 auto;display: block;}
+.search-hint{font-size:14px;color:#c0c1c4;position:absolute;left:13px;margin-top:10px; *margin-top:8px;letter-spacing:normal;font-weight:normal;z-index:0;top:0;font-family: 'Microsoft YaHei';pointer-events: none; }
+
+#list-write-wrap{position: absolute;margin-top: 100px;margin-left: 60px;display:none;}
+
+.pr {position: relative;}
+
+#ToolBox {
+    border: #BFC2D3 1px solid;
+    width: 220px;
+    position: absolute;
+    background-color: #fff;
+    z-index: 50;
+    display: none;
+    margin-top: 40px;
+}
+
+#ToolBox ul {
+    text-align: left;
+    padding: 0;
+    margin: 2px;
+}
+
+#ToolBox ul li {
+    list-style-type: none;
+    line-height: 25px;
+    background-color: #FAFAFA;
+}

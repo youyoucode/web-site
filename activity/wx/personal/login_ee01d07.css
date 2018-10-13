@@ -1,0 +1,73 @@
+body {
+    display: inline;
+    background-color: #1f7eed;
+    min-height: 100vh;
+    height: 100%
+}
+
+.main-container {
+    margin: 0 auto;
+    width: 8.4rem
+}
+
+.title {
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    font-size: .48rem;
+    line-height: 2.4rem
+}
+
+.input-wrapper input {
+    border: 0;
+    width: 100%;
+    height: 1.173333rem;
+    border-radius: 1.173333rem;
+    text-indent: .866667rem
+}
+
+.input-wrapper .phone-wrapper,
+.input-wrapper .password-wrapper {
+    position: relative
+}
+
+.input-wrapper .phone-wrapper img,
+.input-wrapper .password-wrapper img {
+    position: absolute;
+    left: .533333rem;
+    top: .386667rem;
+    height: .4rem
+}
+
+.input-wrapper .phone {
+    margin-bottom: .533333rem
+}
+
+.input-wrapper .password {
+    margin-bottom: .8rem
+}
+
+.js-login-wrapper {
+    margin-bottom: .533333rem;
+    width: 8.4rem;
+    height: 1.28rem;
+    background: url(./login/palfish_login_58f0ec0.png) no-repeat;
+    background-size: 8.4rem auto;
+    color: #a45419;
+    line-height: 1.173333rem;
+    text-align: center;
+    font-size: .48rem;
+    font-weight: 700
+}
+
+.wechat-login-wrapper {
+    width: 8.4rem;
+    height: 1.28rem;
+    background: url(./login/wechat_login_11d5f5f.png) no-repeat;
+    background-size: 8.4rem auto;
+    line-height: 1.173333rem;
+    text-align: center;
+    font-size: .48rem;
+    font-weight: 700;
+    color: #407641
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>mali ide runner</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="full-screen" content="true" />
+    <meta name="screen-orientation" content="portrait" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="360-fullscreen" content="true" />
+    <meta http-equiv="Access-Control-Allow-Origin" content="*" />
+    <link rel="stylesheet" href="css/index.css" type="text/css"/>
+</head>
+<body>
+<div id="content" style="border: none;position: absolute;top: 0;left: 0;right: 0;bottom: 0;width: 1920px;height: 1080px;">
+    <div id='game-area' class="egret-player" data-entry-class="Main" data-orientation="auto" data-scale-mode="noScale" data-frame-rate="30" data-content-width="45%" data-content-height="100%"
+         data-show-paint-rect="false" data-multi-fingered="2" data-show-fps="false" data-show-log="false" data-show-fps-style="x:0,y:0,size:12,textColor:0x000000,bgAlpha:1" style="display:block"></div>
+    <div id="drag-line" style="display:none">
+        <div id="drag-line-gap"></div>
+    </div>
+    <div id="code-area" style="display:none"></div>
+    <!-- 错误提示框 -->
+    <div id='problem-alert-view' style="display:none"></div>
+    <!-- 战斗中方法提示 -->
+    <div id="codeTipData" class="hidden"></div>
+    <div id="splash-cover"  style="display:none"><span style="display: none;position: absolute;top: 30%;left:43%"><img src="resource/assets/loading.gif"/></span></div>
+</div>
+<!-- 音乐播放 -->
+<audio id="audio_s" src="" controls="controls" style="display: none;"></audio>
+<!--这个标签为通过egret提供的第三方库的方式生成的 javascript 文件。删除 modules_files 标签后，库文件加载列表将不会变化，请谨慎操作！-->
+<!--modules_files_start-->
+<script egret="lib" src="libs/modules/egret/egret.min.js" src-release="libs/modules/egret/egret.min.js"></script>
+<script egret="lib" src="libs/modules/egret3d/egret3d.min.js" src-release="libs/modules/egret3d/egret3d.min.js"></script>
+<script egret="lib" src="libs/modules/egret/egret.web.min.js" src-release="libs/modules/egret/egret.web.min.js"></script>
+<script egret="lib" src="libs/modules/game/game.min.js" src-release="libs/modules/game/game.min.js"></script>
+<script egret="lib" src="libs/modules/game/game.web.min.js" src-release="libs/modules/game/game.web.min.js"></script>
+<script egret="lib" src="libs/modules/res/res.min.js" src-release="libs/modules/res/res.min.js"></script>
+<script egret="lib" src="libs/modules/socket/socket.min.js" src-release="libs/modules/socket/socket.min.js"></script>
+<script egret="lib" src="libs/modules/greensock/greensock.min.js" src-release="libs/modules/greensock/greensock.min.js"></script>
+<script egret="lib" src="libs/modules/pomelo/PomeloClient.js" src-release="libs/modules/pomelo/PomeloClient.js"></script>
+
+<!--modules_files_end-->
+<!--这个标签为不通过egret提供的第三方库的方式使用的 javascript 文件，请将这些文件放在libs下，但不要放在modules下面。-->
+<!--other_libs_files_start-->
+<script egret="lib" src="polyfill/promise.js" src-release="polyfill/promise.min.js"></script>
+<!--other_libs_files_end-->
+<script src="lib/ace/zatanna/zatanna.js"></script>
+<script src="lib/ace/ace.js"></script>
+<script src="lib/aether-plugin/lodash/lodash.min.js"></script>
+<script src="lib/aether-plugin/esper.min.js"></script>
+<script src="lib/aether-lib/mali-aether/aether.min.js"></script>
+<script src="dist/ide-bundle.js?v=Math.random()"></script>
+<script src="lib/worker.js"></script>
+<script src="libs/jquery.min.js"></script>
+<script src="libs/marked.min.js"></script>
+<script src="libs/modules/jmd5/jquery.md5.js"></script>
+</body>
+
+</html>

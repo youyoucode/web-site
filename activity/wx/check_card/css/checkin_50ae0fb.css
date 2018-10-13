@@ -1,0 +1,500 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent
+}
+
+html,
+body {
+    padding: 0 0 1.86666667rem;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    background: #FDB968
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none
+}
+
+.bg,
+.dw {
+    position: absolute;
+    top: 0
+}
+
+.bg {
+    width: 100%;
+    height: 100%;
+    background: #000;
+    filter: alpha(opacity=4);
+    opacity: .4;
+    z-index: 998;
+    position: fixed
+}
+
+.dw {
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 83%;
+    height: 10.2rem;
+    background: #fff;
+    border-radius: .4rem;
+    z-index: 999;
+    overflow: visible;
+    text-align: center;
+    background: #fff url(/klian/web/dist/picturebook/marketing/check_card/images/bg_76b4514.png) no-repeat 0 0;
+    background-size: contain
+}
+
+.fairy {
+    position: absolute;
+    left: -.9rem;
+    top: -1.7rem;
+    width: 3.4rem
+}
+
+.pin {
+    color: #999;
+    font: 400 .42rem/0.8rem "Microsoft YaHei";
+    text-align: center;
+    margin-bottom: .8rem;
+    letter-spacing: 1px
+}
+
+.pin b {
+    color: #000;
+    display: block;
+    font-weight: 400
+}
+
+.pin b a {
+    font: 600 .6rem/0.6rem "";
+    color: #39BCF2
+}
+
+.arr {
+    position: absolute;
+    top: -13px;
+    left: 0
+}
+
+p.imbg {
+    display: inline-block;
+    margin: 1.5rem auto .36rem;
+    background: transparent url(/klian/web/dist/picturebook/marketing/check_card/images/bookBg_4502fee.png) no-repeat 0 0;
+    background-size: 100% 102%;
+    position: relative;
+    padding-right: .1rem;
+    box-shadow: 1px 2px 9px #999;
+    font-size: 0;
+    border-top-right-radius: .3rem;
+    border-bottom-right-radius: .3rem
+}
+
+.imbg:before {
+    content: "";
+    display: block;
+    z-index: 999;
+    position: absolute;
+    height: 100%;
+    width: .25rem;
+    background: linear-gradient(90deg, rgba(98, 98, 98, 0), rgba(51, 51, 51, .6))
+}
+
+.cover {
+    width: 3.3rem;
+    border-top-right-radius: .25rem;
+    border-bottom-right-radius: .25rem
+}
+
+.bt {
+    background: #39BCF2;
+    color: #fff;
+    border-radius: 1.5em;
+    padding: .5em 4.4em;
+    font-size: .48rem
+}
+
+.bt1 {
+    display: block;
+    margin-top: .3rem;
+    color: #39BCF2;
+    padding: .5em 4.4em;
+    font-size: .42rem;
+    visibility: hidden
+}
+
+.cls {
+    position: absolute;
+    display: inline-block;
+    bottom: -1.6rem;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    z-index: 9999;
+    cursor: pointer;
+    width: .9rem;
+    height: .9rem;
+    line-height: .8rem;
+    font-size: .44rem;
+    font-family: verdana;
+    font-weight: 500
+}
+
+.pic-top-wrapper {
+    position: relative
+}
+
+.pic-top-wrapper>img {
+    width: 100%;
+    height: auto;
+}
+
+.pic-top-wrapper div.tip-container {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    padding-bottom: .53333333rem
+}
+
+.pic-top-wrapper span.bind-wechat-wrapper {
+    display: none;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 0);
+    width: 5.06666667rem;
+    height: .93333333rem;
+    line-height: .93333333rem;
+    border-radius: .93333333rem;
+    background: #79c013;
+    border: .05333333rem solid #FFFF81;
+    font-size: .4rem;
+    color: #fff
+}
+
+.pic-top-wrapper span.bind-wechat-wrapper img {
+    margin: .2rem .13333333rem 0 0;
+    vertical-align: top;
+    width: .45333333rem
+}
+
+.checkin-wrapper {
+    padding: 0 .26666667rem
+}
+
+.checkin-wrapper .checkin-content {
+    background: #FFFAE1;
+    border: .26666667rem solid #FEAE2F;
+    border-radius: .53333333rem;
+    text-align: center
+}
+
+.checkin-wrapper .checkin-content h3.title {
+    height: 1.13333333rem;
+    line-height: 1.33333333rem;
+    text-align: center;
+    color: #8A4A15;
+    font-size: .4rem
+}
+
+.checkin-wrapper .checkin-content h3.title span {
+    font-size: .4rem
+}
+
+@media screen and (max-width:450px) {
+    .checkin-wrapper .checkin-content .date-content {
+        width: 23%
+    }
+}
+
+@media screen and (min-width:450px) and (max-width:700px) {
+    .checkin-wrapper .checkin-content .date-content {
+        width: 18%
+    }
+}
+
+@media screen and (min-width:700px) and (max-width:900px) {
+    .checkin-wrapper .checkin-content .date-content {
+        width: 14.6666%
+    }
+}
+
+@media screen and (min-width:900px) {
+    .checkin-wrapper .checkin-content .date-content {
+        width: 10.5%
+    }
+}
+
+.checkin-wrapper .checkin-content div.date-wrapper {
+    box-sizing: border-box;
+    padding: 0 .2rem .2rem;
+    max-width: 100%;
+    min-width: 100%;
+    overflow: hidden;
+    display: inline-block;
+    text-align: left
+}
+
+.checkin-wrapper .checkin-content div.date-wrapper .date-content {
+    overflow: hidden;
+    margin: 3px 1%;
+    display: inline-block;
+    height: 1.666rem;
+    padding-bottom: 6px;
+    background: rgba(254, 174, 47, .3);
+    border-radius: .13333333rem;
+    text-align: center;
+    float: left
+}
+
+.checkin-wrapper .checkin-content div.date-wrapper .date-content p {
+    height: .66666667rem;
+    line-height: .85333333rem;
+    font-size: .32rem;
+    color: #8A4A15;
+    letter-spacing: .1em
+}
+
+.checkin-wrapper .checkin-content div.date-wrapper .date-content .go-checkin {
+    display: inline-block;
+    margin-top: .38666667rem;
+    width: 1rem;
+    height: 1rem;
+    line-height: 1rem;
+    border-radius: .66666667rem;
+    background: #F90;
+    font-size: .5rem;
+    color: #fff
+}
+
+.checkin-wrapper .checkin-content div.date-wrapper .date-content span.book-cover-wrapper {
+    display: inline-block;
+    width: .8rem;
+    height: .93333333rem;
+    background: url(/klian/web/dist/picturebook/marketing/check_card/images/book_bg_314bdce.png) no-repeat;
+    background-size: contain
+}
+
+.checkin-wrapper .checkin-content div.date-wrapper .date-content span.book-cover-wrapper img {
+    float: right;
+    margin: .05333333rem .04rem 0 0;
+    width: .64rem;
+    height: .72rem
+}
+
+.checkin-wrapper .checkin-content div.date-wrapper .date-content img.checked-in {
+    margin-top: .18666667rem;
+    width: .61333333rem
+}
+
+.checkin-wrapper .checkin-content div.date-wrapper .date-content span.can-checkin {
+    display: inline-block;
+    margin-top: .18666667rem;
+    width: 1.33333333rem;
+    height: .66666667rem;
+    line-height: .66666667rem;
+    border-radius: .66666667rem;
+    background: #f60;
+    font-size: .32rem;
+    color: #fff
+}
+
+.checkin-wrapper .checkin-content div.date-wrapper .date-content span.cannot-checkin {
+    display: inline-block;
+    margin-top: .18666667rem;
+    width: 1.33333333rem;
+    height: .66666667rem;
+    line-height: .66666667rem;
+    border-radius: .66666667rem;
+    background: rgba(0, 0, 0, .1);
+    font-size: .32rem;
+    color: #fff
+}
+
+.bottom-btn-wrapper {
+    position: fixed;
+    bottom: 0;
+    box-sizing: border-box;
+    padding: 0 .53333333rem;
+    width: 100%;
+    height: 1.33333333rem;
+    background: #FFFAE1
+}
+
+.bottom-btn-wrapper .btn {
+    margin-top: .13333333rem;
+    display: inline-block;
+    width: 4.13333333rem;
+    height: 1.06666667rem;
+    line-height: 1.06666667rem;
+    border-radius: 1.17333333rem;
+    text-align: center;
+    font-size: .48rem;
+    color: #fff
+}
+
+.bottom-btn-wrapper .go-checkin {
+    background: #F90;
+    float: left
+}
+
+.bottom-btn-wrapper .checked-in {
+    background: #c8c8c8
+}
+
+.bottom-btn-wrapper .show-up {
+    background: #79C013;
+    float: right
+}
+
+.bottom-btn-wrapper .show-up .bell-bonus {
+    font-size: .32rem
+}
+
+.bottom-btn-wrapper .showed-up .bell-bonus {
+    display: none
+}
+
+.activity-attend-notice {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: .13333333rem 0;
+    line-height: .46666667rem;
+    background: #1fc1fc;
+    font-size: .32rem;
+    color: #fff;
+    text-align: center
+}
+
+.activity-attend-notice span {
+    font-size: .32rem
+}
+
+.rules-btn {
+    position: fixed;
+    top: 1.46666667rem;
+    left: -.13333333rem;
+    width: 1.46666667rem
+}
+
+.mend-checkin-mask {
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .3)
+}
+
+.mend-checkin-mask .mend-checkin-wrapper {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 7.2rem;
+    height: 4.93333333rem;
+    background: #fff;
+    border-radius: .53333333rem
+}
+
+.mend-checkin-mask .mend-checkin-wrapper p {
+    padding: .8rem .8rem .93333333rem;
+    line-height: .8rem;
+    font-size: .42666667rem;
+    color: #505050
+}
+
+.mend-checkin-mask .mend-checkin-wrapper p span {
+    font-size: .42666667rem
+}
+
+.mend-checkin-mask .mend-checkin-wrapper .btn-wrapper {
+    padding: 0 .66666667rem
+}
+
+.mend-checkin-mask .mend-checkin-wrapper .btn-wrapper .btn {
+    display: inline-block;
+    width: 2.53333333rem;
+    height: 1.06666667rem;
+    border-radius: 1.06666667rem;
+    line-height: 1.06666667rem;
+    text-align: center;
+    font-size: .42666667rem;
+    color: #fff
+}
+
+.mend-checkin-mask .mend-checkin-wrapper .btn-wrapper .cancel-btn {
+    background: #b5b5b5
+}
+
+.mend-checkin-mask .mend-checkin-wrapper .btn-wrapper .ok-btn {
+    float: right;
+    background: #ff7800
+}
+
+.unclock-spirit-mask {
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .3)
+}
+
+.unclock-spirit-mask .unclock-spirit-wrapper {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 7.85333333rem;
+    height: 9.76rem;
+    background: #fff;
+    border-radius: .53333333rem;
+    text-align: center
+}
+
+.unclock-spirit-mask .unclock-spirit-wrapper .close-btn {
+    position: absolute;
+    width: .8rem;
+    right: -.26666667rem;
+    top: -.26666667rem
+}
+
+.unclock-spirit-mask .unclock-spirit-wrapper .unclock-content {
+    padding: .4rem
+}
+
+.unclock-spirit-mask .unclock-spirit-wrapper .unclock-content img {
+    width: 100%;
+    border-radius: .26666667rem
+}
+
+.unclock-spirit-mask .unclock-spirit-wrapper p {
+    line-height: .8rem;
+    text-align: center;
+    font-size: .4rem;
+    color: #505050
+}
+
+.unclock-spirit-mask .unclock-spirit-wrapper .unclock-show-up {
+    margin-top: .4rem;
+    display: inline-block;
+    width: 4rem;
+    height: 1.17333333rem;
+    line-height: 1.17333333rem;
+    background: #f90;
+    border-radius: .58666667rem;
+    font-size: .53333333rem;
+    color: #fff
+}

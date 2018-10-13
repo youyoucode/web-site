@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit">
+    <title>西苑小学车牌查询系统</title>
+    <link type="text/css" rel="stylesheet" href="css/main.css"/>
+</head>
+<body >
+<div class="container">
+    <div class="publicSearch"> 
+        <div class="search-write-wrap">
+            <span class="search-write-left pr">
+                <input class="search-write-cont" value="" id="DomainName" type="text" name="DomainName" url="true" f="1">
+                <b class="search-hint" style="display: block;">请输入车牌</b>
+            </span>
+            <span class="search-write-right"><div class="search-write-btn">查询</div></span>
+        </div>
+        <div id="ToolBox"></div>
+        <div id="list-write-wrap"></div>
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript">
+    $(function(){
+        winWidth = $(window).width();
+        $(".container").width(winWidth + 'px');
+        $(".container").height(winWidth + 'px');
+        $(".search-write-left").width((winWidth-150) + 'px');
+        $(".search-write-cont").width((winWidth-162) + 'px');
+        $(".publicSearch").css("padding-top",35*winWidth/64);
+        var users;
+        $.ajax({
+            url : 'http://115.29.112.82/tool/getUserInfo.php',
+            type : "POST",
+            dataType : "json",
+            data : {name:1}
+        }).done(function(msg) {
+            if (msg.msg == 1000) {
+                users = msg.info;
+            }else{
+                
+            }
+        });
+
+        $('.search-write-cont').bind('input propertychange', function() {
+            if($(".search-write-cont").val().length>0){
+                $(".search-hint").css('visibility',"hidden");
+                if($(".search-write-cont").val().length>0){
+                    var tmpArr = [];
+                    for (var i = users.length - 1; i >= 0; i--){
+                        if(users[i].carno.toLowerCase().indexOf($(".search-write-cont").val().toLowerCase())>-1){
+                            tmpArr.push(users[i].carno);
+                        }
+                    }
+                    var arrLength = tmpArr.length;
+                    if(arrLength>0){
+                        if(arrLength>5) arrLength = 5;
+                        var liStr= "<ul id=‘xlist’>";
+                        for (var i = arrLength - 1; i >= 0; i--){
+                            liStr = liStr + "<li>"+ tmpArr[i] +"</li>"
+                        }
+                        liStr = liStr + "</ul>";
+                        document.getElementById("ToolBox").innerHTML = liStr;
+                        document.getElementById("ToolBox").style.display = "block";
+                        var obj_lis = document.getElementById("ToolBox").getElementsByTagName("li");
+                        for(i=0;i<obj_lis.length;i++){
+                            obj_lis[i].onclick = function(){
+                                $(".search-write-cont").val(this.innerHTML);
+                                document.getElementById("ToolBox").style.display = "none";
+                                for (var i = users.length - 1; i >= 0; i--) {
+                                    if(users[i].carno.toLowerCase()==$(".search-write-cont").val().toLowerCase()){
+                                        $(".search-write-cont").val("");
+                                        $(".search-hint").css('visibility',"visible");
+                                        document.getElementById("list-write-wrap").style.display = "block";
+                                        document.getElementById("list-write-wrap").innerHTML = "<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp班级:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp"+users[i].classname+"</p><p>学生姓名:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp"+users[i].name+"</p><p>家长电话:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp"+users[i].phone+"</p><p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp地区:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp"+users[i].carhead+"</p><p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp车牌:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp"+users[i].carno;
+                                    }
+                                };
+                            }
+                        }
+                    }else{
+                        document.getElementById("ToolBox").style.display = "none";
+                    }
+                }
+            }else $(".search-hint").css('visibility',"visible");
+        });
+
+        $(".search-write-btn").click(function(){
+            if($(".search-write-cont").val().length>0){
+                for (var i = users.length - 1; i >= 0; i--) {
+                    if(users[i].carno.toLowerCase()==$(".search-write-cont").val().toLowerCase()){
+                        $(".search-write-cont").val("");
+                        $(".search-hint").css('visibility',"visible");
+                        document.getElementById("list-write-wrap").style.display = "block";
+                        document.getElementById("list-write-wrap").innerHTML = "<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp班级:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp"+users[i].classname+"</p><p>学生姓名:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp"+users[i].name+"</p><p>家长电话:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp"+users[i].phone+"</p><p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp地区:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp"+users[i].carhead+"</p><p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp车牌:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp"+users[i].carno;
+                    }
+                };
+            }
+        });
+    });
+</script>
+</html>

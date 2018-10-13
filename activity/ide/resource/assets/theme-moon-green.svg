@@ -1,0 +1,18 @@
+<svg width="7" height="8" xmlns="http://www.w3.org/2000/svg">
+ <!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+ <title>theme-moon-green</title>
+ <desc>Created with Sketch.</desc>
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <g fill-rule="evenodd" fill="none" id="Icons">
+   <g fill="white" id="theme-moon-green">
+    <path fill="#ffa226" id="Imported-Layers" d="m6.225,5.555c0.233,0 0.457,-0.032 0.67,-0.096c-0.149,0.235 -0.277,0.426 -0.383,0.575c-0.724,0.872 -1.66,1.308 -2.809,1.308c-1.022,0 -1.895,-0.355 -2.618,-1.069c-0.724,-0.714 -1.085,-1.58 -1.085,-2.601c0,-0.831 0.239,-1.57 0.718,-2.219c0.479,-0.65 1.101,-1.09 1.868,-1.325c0.17,-0.043 0.403,-0.085 0.702,-0.128c-0.171,0.255 -0.288,0.447 -0.351,0.575c-0.235,0.468 -0.351,0.968 -0.351,1.5c0,0.958 0.34,1.777 1.021,2.459c0.681,0.681 1.501,1.021 2.458,1.021l0.16,0"/>
+   </g>
+  </g>
+ </g>
+</svg>

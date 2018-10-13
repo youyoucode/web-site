@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="no-transform"
+        http-equiv="Cache-Control">
+  <meta content="IE=edge"
+        http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+        name="viewport">
+  <meta content="webkit"
+        name="renderer">
+  <title>悠悠青少儿编程个人中心</title>
+  <link href="css/main.css"
+        rel="stylesheet"
+        type="text/css">
+</head>
+<body>
+  <div class="container">
+    <div class="publicSearch">
+      <div class="search-write-wrap">
+        <span class="search-write-left pr"><input class="search-write-cont"
+               f="1"
+               id="DomainName"
+               name="DomainName"
+               placeholder="请输入账号"
+               type="text"
+               url="true"></span>
+        <div class="search-write-btn">
+          <span class="search-write-right">查询</span>
+        </div>
+      </div>
+      <div id="ToolBox"></div>
+      <div id="list-write-wrap"></div>
+    </div>
+  </div>
+  <script src="js/jquery.min.js"
+        type="text/javascript"></script> 
+  <script type="text/javascript">
+
+        winWidth = $(window).width();
+        $(".container").width(winWidth + 'px');
+        $(".container").height(winWidth + 'px');
+        $(".search-write-left").width((winWidth - 150) + 'px');
+        $(".search-write-cont").width((winWidth - 162) + 'px');
+        $(".publicSearch").css("padding-top", 35 * winWidth / 64);
+        $(".search-write-btn").css("padding-left", (winWidth - 150 + 30));
+
+        $(".search-write-btn").click(function() {
+            var userID = $(".search-write-cont").val();
+            window.location.href = "/personal/wechat_personal.php?userID=" + userID;
+
+        });
+
+        // $(function() {
+        //     winWidth = $(window).width();
+        //     $(".container").width(winWidth + 'px');
+        //     $(".container").height(winWidth + 'px');
+        //     $(".search-write-left").width((winWidth - 150) + 'px');
+        //     $(".search-write-cont").width((winWidth - 162) + 'px');
+        //     $(".publicSearch").css("padding-top", 35 * winWidth / 64);
+        //     /*
+        //     $(".search-write-btn").click(function(){
+        //         var userID = $(".search-write-cont").val();
+        //         if(userID.length>0){
+        //             $.ajax({
+        //                 url : 'http://code.youyoucode.cn/gm/getUserInfo.php',
+        //                 type : "POST",
+        //                 dataType : "json",
+        //                 data : {name:userID}
+        //             }).done(function(msg) {
+        //                 if (msg.msg == 1000) {
+        //                     $(".search-write-cont").val("");
+        //                     $(".search-hint").css('visibility',"visible");
+        //                     document.getElementById("list-write-wrap").style.display = "block";
+        //                     var funcTip1 ="<h4 class='shapes-title'>通关数据<\/h4><ul class='shapes-ul'>";
+        //                     for(var i = 0; i < msg.info.length; i++){
+        //                         funcTip1 += "<li><span>"+"关卡ID&nbsp&nbsp"+msg.info[i]['storyID']+"&nbsp&nbsp&nbsp:&nbsp&nbsp&nbsp"+msg.info[i]['star']+"<\/span><\/li>";
+        //                     }
+        //                     funcTip1 += "<\/ul>";
+        //                     $('#list-write-wrap').append(funcTip1);
+        //                 }
+        //             });
+        //         }
+        //     });*/
+        // });
+  </script>
+</body>
+</html>

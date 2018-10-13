@@ -1,0 +1,121 @@
+﻿f^key^cn_value^en_value^b
+0^text_file^文件^File^0
+0^text_open^打开^Open^0
+0^text_new^新建^New^0
+0^text_save^保存^Save^0
+0^text_clone^克隆^Clone^0
+0^text_rename^重命名^Rename^0
+0^text_save_local_files^保存到本地^Save to Local Files^0
+0^text_open_local_files^打开本地文件^Open Local Files^0
+0^text_open_open_project^打开项目^Open Project^0
+0^text_open_delete_project^删除这个项目文件？^Are you sure you want to delete this?^0
+0^text_confirm^确认^Confirm^0
+0^text_cancel^取消^Cancel^0
+0^text_new_project^新项目^New Project^0
+0^text_new_input_project_name^请输入项目名称^Please input the project name^0
+0^text_new_input_project_notice^项目名称不能为空^The name can't be empty.^0
+0^text_share^扫描二维码或复制链接，把项目分享出去。^Scan the QR code or copy the link to share the project.^0
+0^text_share_copy^复制^Copy^0
+0^text_share_alert^项目网址已复制^The URL has already been copied.^0
+0^text_publish^发布到社区^Publish the Project^0
+0^text_publish_author^作者：^Author：^0
+0^text_publish_name^作品命名：^Title：^0
+0^text_publish_description_title^作品说明：^Description：^0
+0^text_publish_description_placeholder^为作品构思一个背景小故事吧！如果想发布小游戏，记得告诉大家你的游戏规则。^Please describe the story behind your work. If you are sharing a game, let others know how to play.^0
+0^text_publish_create_name^请输入标题^Create a name for your project^0
+0^text_community_hot^最热作品^Hot^0
+0^text_community_new^最新作品^New^0
+0^text_community_all^全部作品^All^0
+0^text_community_my^我的作品^My^0
+0^text_clone_window1^克隆^Clone^0
+0^text_clone_window2^当前项目将生成一个新的备份^This project will been cloned.^0
+0^text_clone_window3^项目命名^Project Name^0
+0^text_clone_window4^请输入一个新的项目名称^Please input a new project name^0
+0^text_clone_window5^项目名称不能为空^The name of this project can not be empty.^0
+0^text_clone_window6^完成^OK^0
+0^text_rename_window1^重命名^Rename^0
+0^text_rename_window2^当前项目将被改为新的名字^This project will been renamed.^0
+0^text_rename_window3^项目命名^Project Name^0
+0^text_rename_window4^请输入一个新的项目名称^Please input a new project name^0
+0^text_rename_window5^项目名称不能为空^The name of this project can not be empty.^0
+0^text_rename_window6^完成^OK^0
+0^text_function_documentation^内置函数^Documentation^0
+0^text_function_all^查看全部^View All^0
+0^text_media_multimedia^内置多媒体^Multimedia^0
+0^text_media_image^图片^Image^0
+0^text_media_music^音乐^Music^0
+0^text_media_sound^音效^Sound^0
+0^text_login_welcome^欢迎登录^Welcome^0
+0^text_login_phone^请输入手机号或电子邮件^Phone Number / Email^0
+0^text_login_password^请输入密码^Password^0
+0^text_login_login^登录^Login^0
+0^text_login_reset_password^重置密码^Reset Password^0
+0^text_login_sign_up^注册新用户^Sign Up^0
+0^text_login_error^账号或密码有误，请重新输入^Incorrect account number or password. Please try again.^0
+0^text_login_signout^退出登录^Sign Out^0
+0^text_login_teacher^登录^Log in^0
+0^text_login_student^登录^Log in^0
+0^text_run_autorun^自动运行^Autorun^0
+0^text_run_run^运行^Run^0
+0^text_prompt_rename^文件名已更新.^The file name has been updated.^0
+0^text_prompt_save^文件修改已保存至服务器。^The latest changes have been saved.^0
+0^text_prompt_publish^已发布的作品展示在社区中。^Your published works will be displayed in the LeapLearner Community.^0
+0^text_prompt_notice^注意^Notice^0
+0^text_prompt_clone^已完成项目克隆。^Clone successfully created.^0
+0^text_prompt_new^文件名称已被占用，请重命名。^The file name has been occupied, please rename it.^0
+0^text_prompt_deleate^每个账号至少保留一个项目存档哦^You must have at least one project in your account.^0
+0^text_prompt_error_box^错误提示^Error^0
+0^text_prompt_publish_length^最长20个字符（10个汉字）^No more than 20 characters (10 Chinese characters).^0
+0^text_prompt_publish_input^请输入数字、字母、汉字、空格或下划线。^Numbers, Letters, Chinese characters, spaces or underline.^0
+0^text_prompt_openlocail_community^要执行此操作，请先克隆当前项目。^To perform this operation, please first clone the current project.^0
+0^text_failed_clone^导入失败，请重新输入项目号。^To perform this operation, please first clone the current project.^0
+0^text_time_days^ 天之前^days ago^0
+0^text_time_hours^ 小时之前^hours ago^0
+0^text_time_minutes^ 分钟之前^minutes ago^0
+0^text_time_seconds^ 秒之前^seconds ago^0
+0^text_title_language^ 语言切换^Language^0
+0^text_title_share^ 分享^Share^0
+0^text_title_publish^ 发布^Publish^0
+0^text_title_file^ 文件^File^0
+0^text_title_mode^ 模式切换^Mode^0
+0^text_title_community^ 社区^Community^0
+0^text_title_documentation^ 内置函数^Documentation^0
+0^text_title_multimedia^ 多媒体^Multimedia^0
+0^text_title_classroom^ 在线课堂^Classroom^0
+0^text_page_page^ 页面^Page^0
+0^text_page_go^ 跳转^GO^0
+0^text_class_rectrl^一次只能让一位学生发言^Only one student can speak at a time^0
+0^text_class_noname^房间名不能为空^The name of the room can not be none^0
+0^text_class_refresh^系统异常请刷新浏览器^System exception. Please refresh the browser^0
+0^text_class_notext^请不要发送空消息^Please do not send empty messages^0
+0^text_class_busy^系统忙，请稍后再试^The system is busy. Please try again later^0
+0^text_class_busy_tool^您正在进行其他操作，请取消后再试^You are doing another operation. Please cancel it and try again^0
+0^text_classroom_input^ 请输入您要发送的消息...^please enter what you want to send...^0
+0^text_classroom_err_create^创建房间失败，请刷新浏览器^Creating room exception. Please refresh the browser^0
+0^text_classroom_err_publish^取消控制学生电脑，才可以广播教学^Creating room exception. Please refresh the browser^0
+0^text_classroom_noroom^网络异常，请刷新浏览器^The room is not created. Please try again later^0
+0^text_classroom_teacher_publish^老师开始广播教学^The teacher begin broadcasting instruction^0
+0^text_classroom_teacher_stop^老师停止广播教学^The teacher stop broadcasting instruction^0
+0^text_classroom_teacher_checking^老师正在修改你的代码^The teacher is checking your code^0
+0^text_classroom_teacher_choose^老师已经让您发言^The teacher let you speak^0
+0^text_classroom_roombt_t_title^虚拟课堂^Vitrual Room^0
+0^text_classroom_teacher_c_title^教室ID^Room ID^0
+0^text_classroom_teacher_roomnametext^请输入ID编号^Please input the room id^0
+0^text_classroom_teacher_jroom^进入教室^Join Room^0
+0^text_classroom_teacher_croom^创建教室^Create Room^0
+0^text_classroom_teacher_exit^已下课，请联系老师^Class is over, please contact teacher^0
+0^text_classroom_teacher_onshow^老师正在修改代码，请稍后修改^The teacher is checking the code. Please revise it later^0
+0^text_classroom_teacher_maxnumber^教室已满，请联系老师^The classroom is full. Please contact the teacher^0
+0^text_hardware_check_1^初始化视频插件异常，请联系客服^You are checking the code. Please cancel your view and try again^0
+0^text_hardware_check_2^摄像头设备异常，请检查线路连接或更换设备^You are checking the code. Please cancel your view and try again^0
+0^text_hardware_check_3^麦克风硬件设备异常，请检查线路连接或更换设备^Camera device is abnormal. Please check line connection or replace equipment^0
+0^text_hardware_check_4^无法播放声音，请检查线路或使用外接音响^Unable to play sound. Please check the line or use an external stereo^0
+0^text_hardware_check_5^请输入您要发送的信息^Please enter the information^0
+0^text_warning_netlink^请确保您的网络通畅,然后刷新页面^Please make sure your network is good,then flush the page^0
+0^text_classroom_teacher_onlook^老师查看代码时不可以修改^The teacher is checking the code. Please revise it later^0
+0^text_classroom_send^发送^send^0
+0^text_netWrong_teacher_self^您已断网，请检查网络连接^You have disconnected. Please check the network connection^0
+0^text_netWrong_student_other^老师断网，请联系4006888220^send^0
+0^text_netWrong_student_self^您已断网，请检查网络连接^You have disconnected. Please check the network connection^0
+0^text_netWrong_teacher_other^学生网络异常，请与学生联系^send^0
+0^text_nameWrong_project^该项目名已被占用，请更改后再试^send^0

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="btnStartLearnSkin" width="439" height="147" currentState="up" xmlns:e="http://ns.egret.com/eui" states="up,over,down,disabled" >
+	<e:Image source="start_btn_bg" includeIn="down" x="21" y="5" width="439" height="147"/>
+	<e:Image source="start_btn_bg" includeIn="over" x="0" y="0" width="470" height="158"/>
+	<e:Image source="start_btn_bg" includeIn="up" x="21" y="5" width="439" height="147"/>
+</e:Skin>

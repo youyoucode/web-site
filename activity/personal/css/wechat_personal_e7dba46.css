@@ -1,0 +1,526 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #E4E4E4
+}
+
+p {
+    color: #f60;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.container {
+    box-sizing: border-box;
+    font-size: 0;
+    width: 100%;
+    color: #505050;
+    padding-bottom: 1.33333333rem
+}
+
+.personal {
+    font-size: .42666667rem;
+    background-color: #fff;
+    height: 1.86666667rem;
+    line-height: 1.76rem;
+    border-bottom: 1px solid #f0f0f0;
+    padding: 0 .4rem
+}
+
+.personal span {
+    display: inline-block;
+    vertical-align: middle
+}
+
+.personal .personal-info {
+    float: left
+}
+
+.personal .personal-info .personal-pic {
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+    vertical-align: middle
+}
+
+.personal .personal-info .log-info {
+    display: inline-block;
+    vertical-align: middle
+}
+
+.personal .personal-info .log-info span {
+    display: block;
+    line-height: .66666667rem
+}
+
+.personal .personal-info .log-info .log-out {
+    color: #576d96;
+    font-size: 10px
+}
+
+.personal .star {
+    float: right
+}
+
+.personal .star .star-pic {
+    width: .48rem;
+    height: .48rem;
+    vertical-align: middle
+}
+
+.personal .star .star-num {
+    margin-top: .10666667rem
+}
+
+.lesson {
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0 .4rem;
+    font-size: .42666667rem;
+    background-color: #fff;
+    width: 100%;
+    height: 2.4rem;
+    text-align: center
+}
+
+.lesson div {
+    width: 50%;
+    height: 100%
+}
+
+.lesson span {
+    display: block
+}
+
+.lesson .course {
+    margin: .53333333rem 0 .26666667rem
+}
+
+.lesson .usable-course {
+    border-right: 1px solid #f0f0f0
+}
+
+.tacitly {
+    margin-top: .4rem;
+    background-color: #fff;
+    font-size: .42666667rem
+}
+
+.tacitly .tacitly-title {
+    padding: 0 .4rem;
+    height: 1.17333333rem;
+    line-height: 1.17333333rem;
+    border-bottom: 1px solid #f0f0f0
+}
+
+.tacitly .tacitly-title img {
+    margin-right: .26666667rem;
+    width: .50666667rem;
+    height: .50666667rem;
+    vertical-align: middle
+}
+
+.tacitly .tacitly-info .tacitly-course {
+    border-bottom: 1px solid #f0f0f0;
+    padding: 0 .4rem
+}
+
+.tacitly .tacitly-info .tacitly-course .tacitly-time {
+    height: .93333333rem;
+    line-height: .93333333rem
+}
+
+.tacitly .tacitly-info .tacitly-course .tacitly-lesson {
+    height: 2.4rem
+}
+
+.tacitly .tacitly-info .tacitly-course .tacitly-lesson .lesson-pic {
+    float: left;
+    margin-top: 5px;
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 50%;
+    background-color: #e4e4e4
+}
+
+.tacitly .tacitly-info .tacitly-course .tacitly-lesson .lesson-pic img {
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 50%;
+    background-color: #e4e4e4
+}
+
+.tacitly .tacitly-info .tacitly-course .tacitly-lesson .lesson-info {
+    position: relative;
+    float: right
+}
+
+.tacitly .tacitly-info .tacitly-course .tacitly-lesson .lesson-info img {
+    margin-right: .13333333rem;
+    vertical-align: middle;
+    width: .66666667rem;
+    height: .37333333rem;
+    line-height: .26666667rem
+}
+
+.tacitly .tacitly-info .tacitly-course .tacitly-lesson .lesson-info .lesson-name {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+    width: 6.13333333rem;
+    line-height: .66666667rem
+}
+
+.tacitly .tacitly-info .tacitly-course .tacitly-lesson .lesson-info .alike {
+    line-height: .56rem;
+    font-size: .4rem;
+    color: #929292
+}
+
+.tacitly .tacitly-info .tacitly-course .tacitly-lesson .lesson-info .into {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 2rem;
+    height: .8rem;
+    border: 1px solid #02BD00;
+    border-radius: .8rem;
+    line-height: .8rem;
+    font-size: .34666667rem;
+    color: #02BD00
+}
+
+.tacitly .tacitly-info .tacitly-course .tacitly-lesson .lesson-info .into img {
+    margin-left: .4rem;
+    width: .37333333rem;
+    height: .37333333rem
+}
+
+.tacitly .tacitly-info .tacitly-course .tacitly-lesson .lesson-info .plan-course {
+    position: absolute;
+    bottom: 0;
+    right: .26666667rem;
+    color: #f60
+}
+
+.tacitly .tacitly-no {
+    padding-bottom: 1.2rem;
+    text-align: center;
+    color: #929292;
+    font-size: .42666667rem
+}
+
+.tacitly .tacitly-no img {
+    display: block;
+    margin: .8rem auto .66666667rem;
+    width: 2.13333333rem;
+    height: 2.13333333rem
+}
+
+.tacitly-btn {
+    margin: .8rem 1.66666667rem 0;
+    background-color: #f90;
+    width: 6.66666667rem;
+    height: 1.17333333rem;
+    line-height: 1.17333333rem;
+    border-radius: 1.17333333rem;
+    text-align: center;
+    font-size: .42666667rem;
+    color: #fff
+}
+
+.hint {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .5);
+    font-size: .4rem;
+    width: 100%;
+    height: 100%
+}
+
+.hint .hint-text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 2;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: .8rem .73333333rem .53333333rem;
+    width: 6.53333333rem;
+    height: 3rem;
+    border-radius: .26666667rem
+}
+
+.hint .hint-text .hint-btn {
+    padding: .8rem .26666667rem
+}
+
+.hint .hint-text .hint-btn .download {
+    float: left;
+    background: url(/klian/web/dist/kid/mobile/bind_user/images/hint_left_9d11ad9.png) no-repeat center;
+    background-size: cover;
+    color: #a55418
+}
+
+.hint .hint-text .hint-btn .cancel {
+    float: right;
+    background: url(/klian/web/dist/kid/mobile/bind_user/images/hint_right_57792c6.png) no-repeat center;
+    background-size: cover;
+    color: #396f0c
+}
+
+.hint .hint-text .hint-btn span {
+    width: 2.53333333rem;
+    height: 1.04rem;
+    text-align: center;
+    line-height: .93333333rem
+}
+
+
+/*课程区域*/
+
+.course-container {
+    /*overflow:hidden;*/
+}
+
+.outer {
+    width: 200%;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    -webkit-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    overflow: hidden;
+}
+
+.gallery {
+    width: 100%;
+    height: 100%;
+    /* overflow-y:scroll;*/
+    /* position:relative;*/
+}
+
+.attended-container,
+.unattended-container {
+    -webkit-backface-visibility: hidden;
+    float: left;
+    position: relative;
+    width: 50%;
+}
+
+
+/*
+.unattended-container{
+    overflow:scroll;
+}
+.attended-container{
+    overflow:hidden;
+}*/
+
+.course-item {
+    background: #fff;
+    padding: 0 0.23rem 0.23rem 0.23rem;
+    margin-bottom: 0.15rem;
+    overflow: hidden;
+    font-size: 0.22rem;
+    position: relative;
+    background: #fff;
+}
+
+.course-item h3 {
+    font-size: 0.26rem;
+    color: #666
+}
+
+.teacher-name,
+.course-item>h3 {
+    margin-top: 0.2rem;
+    color: #666
+}
+
+.time-line,
+.course-line {
+    color: #666
+}
+
+.top-line {
+    color: #666;
+    font-size: 15px;
+}
+
+
+/*兴趣课的topic*/
+
+.course-item .i-topic {
+    margin-top: 0.1rem;
+}
+
+.course-item {
+    padding: 0.18rem 0.23rem 0.18rem 0.23rem;
+}
+
+.time-line {
+    /* height:0.5rem; */
+    line-height: 0.4rem;
+    margin-top: 0;
+    margin-left: 10px;
+}
+
+.course-state {
+    padding: 0.08rem 0.06rem;
+    color: #fff;
+    text-align: center;
+    font-size: 0.18rem;
+    display: inline-block;
+    background: #666;
+    border-radius: 0.08rem;
+}
+
+.course-state.finished {
+    color: #fff;
+    background: #b676c6;
+}
+
+.time-line span {
+    margin-right: 0.05rem;
+}
+
+.course-line span {
+    margin-right: 0.4rem;
+}
+
+.course-type {
+    width: 0.8rem;
+    font-size: 0.17rem;
+    background: #b676c6;
+    color: #fff;
+    text-align: center;
+    border-radius: 0.1rem;
+    line-height: 0.14rem;
+    padding: 0.1rem 0;
+    display: none;
+    position: relative;
+    top: -0.02rem;
+}
+
+.interest-course {
+    display: inline-block;
+}
+
+
+/*取消课程*/
+
+.course-tips {
+    font-size: 0.2rem;
+    color: #e29a00;
+    padding-left: 0.2rem;
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+    display: none;
+    background-color: #ffefcc
+}
+
+.course-item .cancel-course,
+.course-item .teacher-comment,
+.previewBtn {
+    width: 1.3rem;
+    height: 0.46rem;
+    line-height: 0.5rem;
+    border-radius: 0.35rem;
+    text-align: center;
+    color: #b676c6;
+    font-size: 0.22rem;
+    border: 0.01rem solid #b676c6;
+    position: absolute;
+    top: 50%;
+    right: 0.2rem;
+    margin-top: -0.25rem;
+}
+
+.course-item .disabled {
+    color: #666;
+    border: 0.005rem solid #e0e0e0;
+    background: #f0f0f0;
+}
+
+.teacher-comment a,
+.cancel-course a {
+    color: inherit;
+}
+
+.no-course {
+    text-align: center;
+    color: #666;
+    width: 100%;
+    position: absolute;
+    top: 25%;
+    display: none;
+}
+
+.no-course img {
+    width: 3.2rem;
+    height: 2.14rem;
+    display: block;
+    margin: 0 auto 0.1rem;
+}
+
+.book-now {
+    color: #b676c6;
+    font-size: 0.3rem;
+    margin: 0 0.05rem;
+}
+
+.get-more {
+    text-align: center;
+    color: #666;
+    padding: 0.1rem 0 0.2rem;
+    display: none;
+}
+
+
+/* 添加预习入口 */
+
+.time-line img {
+    vertical-align: middle;
+    width: 0.1877rem;
+}
+
+.enTitle {
+    /*font-size: 0.27rem;*/
+    color: #333333;
+    margin-top: 10;
+}
+
+.preview_star {
+    width: 15%;
+    display: inline-block;
+}
+
+.previewBtn {
+    background-color: #c271cb
+}
+
+.previewBtn a {
+    color: white;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.course-tips img {
+    vertical-align: middle;
+    width: 0.2048rem;
+    height: 0.2048rem;
+}
