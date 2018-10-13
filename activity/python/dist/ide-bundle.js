@@ -1712,7 +1712,7 @@ var MenuContentView = /** @class */ (function () {
         });
         $("#editor-pane-nav-snippets-menu-btn").click(function (event) {
             var url = $("#editor-pane-nav-snippets-menu-input").val();
-            if (url.length > 0 && url.indexOf("http") > -1 && url.indexOf("http://www.youyoucode.cn") < 0) {
+            if (url.length > 0 && url.indexOf("http") > -1 && url.indexOf("http://www.codeweilai.com") < 0) {
                 var request = new egret.HttpRequest();
                 request.responseType = egret.HttpResponseType.TEXT;
                 request.open("/python/resource/images/upload.php", egret.HttpMethod.POST);

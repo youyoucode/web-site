@@ -3,9 +3,9 @@
     "host":"139.196.86.49",
     "port":3010
   },
-  "rechargeURI":"http://course.youyoucode.cn/#/class/5948afa88eb85b23861f8857?redirect=code.youyoucode.cn",
+  "rechargeURI":"http://course.codeweilai.com/#/class/5948afa88eb85b23861f8857?redirect=code.codeweilai.com",
   "platform":"",
   "guide":"no",
   "embedTo":"ml",
-  "embedLink":"//sso.malichina.com/#/signin?redirect=code.youyoucode.cn"
+  "embedLink":"//sso.malichina.com/#/signin?redirect=code.codeweilai.com"
 }

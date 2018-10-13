@@ -36,7 +36,7 @@ document.getElementById("js-submit-btn").onclick = function(e) {
 	                	if(window.location.href.indexOf("redirect=")>=0){
 	                		var vals = window.location.href.split("redirect=");
 	                		window.location.replace("http://"+vals[1]);
-	                	}else window.location.replace("http://code.youyoucode.cn");
+	                	}else window.location.replace("http://code.codeweilai.com");
 	                } else {
 	                    $("#js-password .message").css('visibility',"visible");
 	                }
