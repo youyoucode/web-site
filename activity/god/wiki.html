@@ -1,545 +1,717 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="utf-8"> 
-	<title>悠悠课堂 - function汇总</title>
-	<link rel="stylesheet" type="text/css" href="index.css">
-	<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
-	<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
-	<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	
-	<style>
+    <meta charset="utf-8">
+    <title>码力课堂 - function汇总</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-.nav1	{
-	height:70px;
-	line-height: 70px;
-	background-color: #70BBB5;
-	padding:0;
-	margin:0;
+    <style>
+        .nav1 {
+            height: 70px;
+            line-height: 70px;
+            background-color: #70BBB5;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .nav_li {
+            float: right;
+            margin-left: 30px;
+            height: 70px;
+            line-height: 70px;
+        }
+        
+        .img_div {
+            height: 150px;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
+    </style>
 
-}
-
-
-.nav_li {
-	float:right;
-	margin-left:30px;
-	height:70px;
-	line-height: 70px;
-}
-
-
-.img_div {
-	height: 150px;
-	width:100%; 
-	background-repeat: no-repeat; 
-	background-position: center; 
-	background-size: contain;
-}
-</style>
-	
 </head>
-  
-  
+
+
 <body>
-<script type="text/javascript">
-function showFunctions(j) {
-	var divs = ["line","rectangle","circle","triangle","text","image","playMusic","random","detectCollision","mirrorImage"];
-	for(var i in divs) {
-		document.getElementById(divs[i]).style.display='none';
-	}
-	document.getElementById(j).style.display='block';
-}
-</script>
-  
-<div class="nav">
-	<div class="nav_box">
-		<a href="./all_class.html"><div id="logo" ></div></a>
-		<ul class="nav_menu">
-			<!--li class="nav_li">
+    <script type="text/javascript">
+        function showFunctions(j) {
+            var divs = ["line", "rectangle", "circle", "triangle", "text", "image", "playMusic", "random", "detectCollision", "mirrorImage"];
+            for (var i in divs) {
+                document.getElementById(divs[i]).style.display = 'none';
+            }
+            document.getElementById(j).style.display = 'block';
+        }
+    </script>
+
+    <div class="nav">
+        <div class="nav_box">
+            <a href="./all_class.html">
+                <div id="logo"></div>
+            </a>
+            <ul class="nav_menu">
+                <!--li class="nav_li">
 				<a class="nav_text" href="./resource.html">素材库</a>
 			</li
 			<li class="nav_li">
 				<a class="nav_text" href="./other_files.html">资料库</a>
 			</li>-->
-			<li class="nav_li">
-				<a class="nav_text" href="./wiki.html">知识库</a>
-			</li>
-			<li class="nav_li">
-				<a class="nav_text" href="./all_class.html">课程表</a>
-			</li>
-			<li class="nav_li">
-				<a class="nav_text" href="./all_class.html">课程内容</a>
-			</li>
-		</ul>
-	</div>
-</div>
-<div style="height:50px; width:70%; margin:0px auto; line-height:50px; text-align: left; font-size: 20px;">知识库</div>
-<div id="container" style="width:70%; margin:0px auto;">
-  
+                <li class="nav_li">
+                    <a class="nav_text" href="./wiki.html">知识库</a>
+                </li>
+                <li class="nav_li">
+                    <a class="nav_text" href="./all_class.html">课程表</a>
+                </li>
+                <li class="nav_li">
+                    <a class="nav_text" href="./all_class.html">课程内容</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div style="height:50px; width:70%; margin:0px auto; line-height:50px; text-align: left; font-size: 20px;">知识库</div>
+    <div id="container" style="width:70%; margin:0px auto;">
 
-<div class="panel-group" id="accordion" style="background-color:#EEEEEE;height:800px;width:16%;float:left;">
-	<div class="panel panel-default">
-		<div class="panel-heading">
-			<h4 class="panel-title">
-				<a data-toggle="collapse" data-parent="#accordion" 
-				   href="#shape">
+
+        <div class="panel-group" id="accordion" style="background-color:#EEEEEE;height:800px;width:16%;float:left;">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#shape">
 					图文绘制
                     <span class="caret"></span>
 				</a>
-			</h4>
-		</div>
-		<div id="shape" class="panel-collapse collapse">
-			<div class="panel-body">
-				<div class="btn-group-vertical">
-					<button type="button" class="btn btn-default" onclick = showFunctions("line")>
+                    </h4>
+                </div>
+                <div id="shape" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <div class="btn-group-vertical">
+                            <button type="button" class="btn btn-default" onclick=s howFunctions( "line")>
 						line
 					</button>
-					<button type="button" class="btn btn-default" onclick = showFunctions("rectangle")>
+                            <button type="button" class="btn btn-default" onclick=s howFunctions( "rectangle")>
 						rectangle
 					</button>
-					<button type="button" class="btn btn-default" onclick = showFunctions("circle")>
+                            <button type="button" class="btn btn-default" onclick=s howFunctions( "circle")>
 						circle
-					</button> 
-					<button type="button" class="btn btn-default" onclick = showFunctions("triangle")>
+					</button>
+                            <button type="button" class="btn btn-default" onclick=s howFunctions( "triangle")>
 						triangle
 					</button>
-					<button type="button" class="btn btn-default" onclick = showFunctions("text")>
+                            <button type="button" class="btn btn-default" onclick=s howFunctions( "text")>
 						text
 					</button>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="panel panel-default">
-		<div class="panel-heading">
-			<h4 class="panel-title">
-				<a data-toggle="collapse" data-parent="#accordion" 
-				   href="#medias">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#medias">
 					媒体资源
                     <span class="caret"></span>
 				</a>
-			</h4>
-		</div>
-		<div id="medias" class="panel-collapse collapse">
-			<div class="panel-body">
-				<div class="btn-group-vertical">
-					<button type="button" class="btn btn-default" onclick = showFunctions("image")>
+                    </h4>
+                </div>
+                <div id="medias" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <div class="btn-group-vertical">
+                            <button type="button" class="btn btn-default" onclick=s howFunctions( "image")>
 						image
-					</button> 
-					<button type="button" class="btn btn-default" onclick = showFunctions("mirrorImage")>
+					</button>
+                            <button type="button" class="btn btn-default" onclick=s howFunctions( "mirrorImage")>
 						mirrorImage
 					</button>
-					<button type="button" class="btn btn-default" onclick = showFunctions("playMusic")>
+                            <button type="button" class="btn btn-default" onclick=s howFunctions( "playMusic")>
 						playMusic
 					</button>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="panel panel-default">
-		<div class="panel-heading">
-			<h4 class="panel-title">
-				<a data-toggle="collapse" data-parent="#accordion" 
-				   href="#Lv2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#Lv2">
 					逻辑运算
                     <span class="caret"></span>
 				</a>
-			</h4>
-		</div>
-		<div id="Lv2" class="panel-collapse collapse">
-			<div class="panel-body">
-				<div class="btn-group-vertical">
-					<button type="button" class="btn btn-default" onclick = showFunctions("random")>
+                    </h4>
+                </div>
+                <div id="Lv2" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <div class="btn-group-vertical">
+                            <button type="button" class="btn btn-default" onclick=s howFunctions( "random")>
 						random
 					</button>
-					<button type="button" class="btn btn-default" onclick = showFunctions("detectCollision")>
+                            <button type="button" class="btn btn-default" onclick=s howFunctions( "detectCollision")>
 						detectCollision
 					</button>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
 
-<div id="content" style="background-color:#EEEEEE;height:800px;width:84%;float:left;padding:3%;">
-	
-	<div id="line" style="display:none;">
-		<p class="text-left"><h2><font color="#FA7C7F">line函数</font></h2></p><br>
-		使用line函数可以画出一条直线段，并改变它的宽度和颜色。<br>
-		<p class="text-left"><h3><font color="#FA7C7F">&#183;参数</font></h2></p><br>
-		line(x1,y1,x2,y2,w,color);<br>
-		<table class="table">
-			<thead>
-				<tr style="background-color:#70BBB5;">
-				<th>参数</th>
-				<th>类型</th>
-				<th>描述</th></tr>
-			</thead>
-			<tbody>
-				<tr class="active">
-				<td>x1</td>
-				<td>数字</td>
-				<td>起点的x坐标</td></tr>
-				<tr class="success">
-				<td>y1</td>
-				<td>数字</td>
-				<td>起点的y坐标</td></tr>
-				<tr class="warning">
-				<td>x2</td>
-				<td>数字</td>
-				<td>终点的x坐标</td></tr>
-				<tr class="danger">
-				<td>y2</td>
-				<td>数字</td>
-				<td>终点的y坐标</td></tr>
-				<tr class="active">
-				<td>w</td>
-				<td>数字</td>
-				<td>直线段的宽度</td></tr>
-				<tr class="success">
-				<td>color</td>
-				<td>字符串</td>
-				<td>直线段的颜色</td></tr>
-			</tbody>
-		</table>
-		<p class="text-left"><h3><font color="#FA7C7F">&#183;试一试</font></h2></p><br>
-		<a style="width:auto; height:30px; line-height:30px; padding:5px; background-color:#FA7C7F; color:white; border-radius:5px; text-decoration: none;" href="http://ide.codeweilai.com/lpeduv/1/edit?js,output" target="_blank">画一条红色的直线</a>
-	</div>
-	<div id="rectangle" style="display:none;">
-		<p class="text-left"><h2><font color="#FA7C7F">rectangle函数</font></h2></p><br>
-		使用rectangle函数可以画出矩形，并改变它的大小和颜色。<br>
-		<p class="text-left"><h3><font color="#FA7C7F">&#183;参数</font></h2></p><br>
-		rectangle(x,y,w,l,color);<br>
-		<table class="table">
-			<thead>
-				<tr style="background-color:#70BBB5;">
-				<th>参数</th>
-				<th>类型</th>
-				<th>描述</th></tr>
-			</thead>
-			<tbody>
-				<tr class="active">
-				<td>x</td>
-				<td>数字</td>
-				<td>矩形左上角的x坐标</td></tr>
-				<tr class="success">
-				<td>y</td>
-				<td>数字</td>
-				<td>矩形左上角的y坐标</td></tr>
-				<tr class="warning">
-				<td>w</td>
-				<td>数字</td>
-				<td>矩形的宽度</td></tr>
-				<tr class="danger">
-				<td>h</td>
-				<td>数字</td>
-				<td>矩形的高度</td></tr>
-				<tr class="active">
-				<td>color</td>
-				<td>字符串</td>
-				<td>矩形的颜色</td></tr>
-			</tbody>
-		</table>
-		<p class="text-left"><h3><font color="#FA7C7F">&#183;试一试</font></h2></p><br>
-		<a style="width:auto; height:30px; line-height:30px; padding:5px; background-color:#FA7C7F; color:white; border-radius:5px; text-decoration: none;" href="http://ide.codeweilai.com/llijoj/1/edit?js,output" target="_blank">画一个蓝色的矩形</a>
-	</div>
-	<div id="circle" style="display:none;">
-		<p class="text-left"><h2><font color="#FA7C7F">circle函数</font></h2></p><br>
-			使用circle函数可以画出圆形，并改变它的大小和颜色。<br>
-		<p class="text-left"><h3><font color="#FA7C7F">&#183;参数</font></h2></p><br>
-			circle(x,y,r,color);<br>
-		<table class="table">
-			<thead>
-				<tr style="background-color:#70BBB5;">
-				<th>参数</th>
-				<th>类型</th>
-				<th>描述</th></tr>
-			</thead>
-			<tbody>
-				<tr class="active">
-				<td>x</td>
-				<td>数字</td>
-				<td>圆心的x坐标</td></tr>
-				<tr class="success">
-				<td>y</td>
-				<td>数字</td>
-				<td>圆心的y坐标</td></tr>
-				<tr class="warning">
-				<td>r</td>
-				<td>数字</td>
-				<td>圆的半径</td></tr>
-				<tr class="danger">
-				<td>color</td>
-				<td>字符串</td>
-				<td>圆的颜色</td></tr>
-			</tbody>
-		</table>
-		<p class="text-left"><h3><font color="#FA7C7F">&#183;试一试</font></h2></p><br>
-		<a style="width:auto; height:30px; line-height:30px; padding:5px; background-color:#FA7C7F; color:white; border-radius:5px; text-decoration: none;" href="http://ide.codeweilai.com/lyades/1/edit?js,output" target="_blank">画一个黄色的圆形</a>
-	</div>
-	<div id="triangle" style="display:none;">
-		<p class="text-left"><h2><font color="#FA7C7F">triangle函数</font></h2></p><br>
-			使用triangle函数可以画出三角形，并改变它的大小和颜色。<br>
-		<p class="text-left"><h3><font color="#FA7C7F">&#183;参数</font></h2></p><br>
-			triangle(x1,y1,x2,y2,x3,y3,color);<br>
-		<table class="table">
-			<thead>
-				<tr style="background-color:#70BBB5;">
-				<th>参数</th>
-				<th>类型</th>
-				<th>描述</th></tr>
-			</thead>
-			<tbody>
-				<tr class="active">
-				<td>x1</td>
-				<td>数字</td>
-				<td>第一个点的x坐标</td></tr>
-				<tr class="success">
-				<td>y1</td>
-				<td>数字</td>
-				<td>第一个点的y坐标</td></tr>
-				<tr class="warning">
-				<td>x2</td>
-				<td>数字</td>
-				<td>第二个点的x坐标</td></tr>
-				<tr class="danger">
-				<td>y2</td>
-				<td>数字</td>
-				<td>第二个点的y坐标</td></tr>
-				<tr class="active">
-				<td>x3</td>
-				<td>数字</td>
-				<td>第三个点的x坐标</td></tr>
-				<tr class="success">
-				<td>y3</td>
-				<td>数字</td>
-				<td>第三个点的y坐标</td></tr>
-				<tr class="warning">
-				<td>color</td>
-				<td>字符串</td>
-				<td>三角形的颜色</td></tr>
-			</tbody>
-		</table>
-		<p class="text-left"><h3><font color="#FA7C7F">&#183;试一试</font></h2></p><br>
-		<a style="width:auto; height:30px; line-height:30px; padding:5px; background-color:#FA7C7F; color:white; border-radius:5px; text-decoration: none;" href="http://ide.codeweilai.com/lfezag/1/edit?js,output" target="_blank">画一个绿色的三角形</a>
-	</div>
-	<div id="text" style="display:none;">
-		<p class="text-left"><h2><font color="#FA7C7F">text函数</font></h2></p><br>
-			使用text函数可以在画布上显示一段文字，你可以改变文字内容、大小和颜色。<br>
-		<p class="text-left"><h3><font color="#FA7C7F">&#183;参数</font></h2></p><br>
-			text(str,x,y,color,size);<br>
-		<table class="table">
-			<thead>
-				<tr style="background-color:#70BBB5;">
-				<th>参数</th>
-				<th>类型</th>
-				<th>描述</th></tr>
-			</thead>
-			<tbody>
-				<tr class="active">
-				<td>str</td>
-				<td>字符串</td>
-				<td>文字的内容</td></tr>
-				<tr class="success">
-				<td>x</td>
-				<td>数字</td>
-				<td>文字起点（左下角）的x坐标</td></tr>
-				<tr class="warning">
-				<td>y</td>
-				<td>数字</td>
-				<td>文字起点（左下角）的y坐标</td></tr>
-				<tr class="danger">
-				<td>color</td>
-				<td>字符串</td>
-				<td>文字的颜色</td></tr>
-				<tr class="active">
-				<td>size</td>
-				<td>数字</td>
-				<td>文字的大小</td></tr>
-			</tbody>
-		</table>
-		<p class="text-left"><h3><font color="#FA7C7F">&#183;试一试</font></h2></p><br>
-		<a style="width:auto; height:30px; line-height:30px; padding:5px; background-color:#FA7C7F; color:white; border-radius:5px; text-decoration: none;" href="http://ide.codeweilai.com/lmanuv/1/edit?js,output" target="_blank">唐诗一首</a>
-	</div>
-	<div id="image" style="display:none;">
-		<p class="text-left"><h2><font color="#FA7C7F">image函数</font></h2></p><br>
-		使用image函数可以导入一张图片，让它以指定大小显示在指定位置。<br>
-		<p class="text-left"><h3><font color="#FA7C7F">&#183;参数</font></h2></p><br>
-		image(img,x,y,w,h);<br>
-		<table class="table">
-			<thead>
-				<tr style="background-color:#70BBB5;">
-				<th>参数</th>
-				<th>类型</th>
-				<th>描述</th></tr>
-			</thead>
-			<tbody>
-				<tr class="active">
-				<td>img</td>
-				<td>字符串</td>
-				<td>图片的url</td></tr>
-				<tr class="success">
-				<td>x</td>
-				<td>数字</td>
-				<td>图片左上角的x坐标</td></tr>
-				<tr class="warning">
-				<td>y</td>
-				<td>数字</td>
-				<td>图片左上角的y坐标</td></tr>
-				<tr class="danger">
-				<td>w</td>
-				<td>数字</td>
-				<td>图片的宽度</td></tr>
-				<tr class="active">
-				<td>h</td>
-				<td>数字</td>
-				<td>图片的高度</td></tr>
-			</tbody>
-		</table>
-		<p class="text-left"><h3><font color="#FA7C7F">&#183;试一试</font></h2></p><br>
-		<a style="width:auto; height:30px; line-height:30px; padding:5px; background-color:#FA7C7F; color:white; border-radius:5px; text-decoration: none;" href="http://ide.codeweilai.com/lmepom/1/edit?js,output" target="_blank">导入立乐教育Logo</a>
-	</div>
-	<div id="playMusic" style="display:none;">
-		<p class="text-left"><h2><font color="#FA7C7F">playMusic函数</font></h2></p><br>
-		使用playMusic函数可以播放一段音乐。<br>
-		<p class="text-left"><h3><font color="#FA7C7F">&#183;参数</font></h2></p><br>
-		playMusic(music,loop);<br>
-		<table class="table">
-			<thead>
-				<tr style="background-color:#70BBB5;">
-				<th>参数</th>
-				<th>类型</th>
-				<th>描述</th></tr>
-			</thead>
-			<tbody>
-				<tr class="active">
-				<td>music</td>
-				<td>字符串</td>
-				<td>音乐的url</td></tr>
-				<tr class="success">
-				<td>loop</td>
-				<td>布尔型</td>
-				<td>为true循环播放，为false不循环</td></tr>
-			</tbody>
-		</table>
-		<p class="text-left"><h3><font color="#FA7C7F">&#183;试一试</font></h2></p><br>
-		<a style="width:auto; height:30px; line-height:30px; padding:5px; background-color:#FA7C7F; color:white; border-radius:5px; text-decoration: none;" href="http://ide.codeweilai.com/lbekij/1/edit?js,output" target="_blank">循环播放音乐</a>
-	</div>
-	<div id="random" style="display:none;">
-		<p class="text-left"><h2><font color="#FA7C7F">random函数</font></h2></p><br>
-		使用random函数可以生成指定范围内的随机数，如random(30,50)将生成一个大于等于30且小于50的随机数。<br>
-		<p class="text-left"><h3><font color="#FA7C7F">&#183;参数</font></h2></p><br>
-		random(min,max);<br>
-		<table class="table">
-			<thead>
-				<tr style="background-color:#70BBB5;">
-				<th>参数</th>
-				<th>类型</th>
-				<th>描述</th></tr>
-			</thead>
-			<tbody>
-				<tr class="active">
-				<td>min</td>
-				<td>数字</td>
-				<td>随机数的最小值</td></tr>
-				<tr class="success">
-				<td>max</td>
-				<td>数字</td>
-				<td>随机数的最大值</td></tr>
-			</tbody>
-		</table>
-		<p class="text-left"><h3><font color="#FA7C7F">&#183;试一试</font></h2></p><br>
-		<a style="width:auto; height:30px; line-height:30px; padding:5px; background-color:#FA7C7F; color:white; border-radius:5px; text-decoration: none;" href="http://ide.codeweilai.com/lpusug/1/edit?js,output" target="_blank">生成30-60的随机数</a>
-	</div>
-	<div id="detectCollision" style="display:none;">
-		<p class="text-left"><h2><font color="#FA7C7F">detectCollision函数</font></h2></p><br>
-		使用detectCollision可以检测两个元素是否碰撞。如果碰撞，则返回true；如果没有碰撞，则返回false。<br>
-		<p class="text-left"><h3><font color="#FA7C7F">&#183;参数</font></h2></p><br>
-		detectCollision(x1,y1,w1,h1,x2,y2,w2,h2);<br>
-		<table class="table">
-			<thead>
-				<tr style="background-color:#70BBB5;">
-				<th>参数</th>
-				<th>类型</th>
-				<th>描述</th></tr>
-			</thead>
-			<tbody>
-				<tr class="active">
-				<td>x1</td>
-				<td>数字</td>
-				<td>第一个元素的x坐标</td></tr>
-				<tr class="success">
-				<td>y1</td>
-				<td>数字</td>
-				<td>第一个元素的y坐标</td></tr>
-				<tr class="warning">
-				<td>w1</td>
-				<td>数字</td>
-				<td>第一个元素的宽度</td></tr>
-				<tr class="danger">
-				<td>h1</td>
-				<td>数字</td>
-				<td>第一个元素的高度</td></tr>
-				<tr class="active">
-				<td>x2</td>
-				<td>数字</td>
-				<td>第二个元素的x坐标</td></tr>
-				<tr class="success">
-				<td>y2</td>
-				<td>数字</td>
-				<td>第二个元素的y坐标</td></tr>
-				<tr class="warning">
-				<td>w2</td>
-				<td>数字</td>
-				<td>第二个元素的宽度</td></tr>
-				<tr class="danger">
-				<td>h2</td>
-				<td>数字</td>
-				<td>第二个元素的高度</td></tr>
-			</tbody>
-		</table>
-	</div>
-	<div id="mirrorImage" style="display:none;">
-		<p class="text-left"><h2><font color="#FA7C7F">mirrorImage函数</font></h2></p><br>
-		使用mirrorImage函数可以左右镜像显示一张图片。<br>
-		<p class="text-left"><h3><font color="#FA7C7F">&#183;参数</font></h2></p><br>
-		mirrorImage(img,x,y,w,h);<br>
-		<table class="table">
-			<thead>
-				<tr style="background-color:#70BBB5;">
-				<th>参数</th>
-				<th>类型</th>
-				<th>描述</th></tr>
-			</thead>
-			<tbody>
-				<tr class="active">
-				<td>img</td>
-				<td>字符串</td>
-				<td>图片的url</td></tr>
-				<tr class="success">
-				<td>x</td>
-				<td>数字</td>
-				<td>图片左上角的x坐标</td></tr>
-				<tr class="warning">
-				<td>y</td>
-				<td>数字</td>
-				<td>图片左上角的y坐标</td></tr>
-				<tr class="danger">
-				<td>w</td>
-				<td>数字</td>
-				<td>图片的宽度</td></tr>
-				<tr class="active">
-				<td>h</td>
-				<td>数字</td>
-				<td>图片的高度</td></tr>
-			</tbody>
-		</table>
-		<p class="text-left"><h3><font color="#FA7C7F">&#183;试一试</font></h2></p><br>
-		<a style="width:auto; height:30px; line-height:30px; padding:5px; background-color:#FA7C7F; color:white; border-radius:5px; text-decoration: none;" href="http://ide.codeweilai.com/llesum/1/edit?js,output" target="_blank">镜像图片</a>
-	</div>
-</div>
+        <div id="content" style="background-color:#EEEEEE;height:800px;width:84%;float:left;padding:3%;">
+
+            <div id="line" style="display:none;">
+                <p class="text-left">
+                    <h2>
+                        <font color="#FA7C7F">line函数</font>
+                    </h2>
+                </p><br> 使用line函数可以画出一条直线段，并改变它的宽度和颜色。
+                <br>
+                <p class="text-left">
+                    <h3>
+                        <font color="#FA7C7F">&#183;参数</font>
+                        </h2>
+                </p><br> line(x1,y1,x2,y2,w,color);
+                <br>
+                <table class="table">
+                    <thead>
+                        <tr style="background-color:#70BBB5;">
+                            <th>参数</th>
+                            <th>类型</th>
+                            <th>描述</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="active">
+                            <td>x1</td>
+                            <td>数字</td>
+                            <td>起点的x坐标</td>
+                        </tr>
+                        <tr class="success">
+                            <td>y1</td>
+                            <td>数字</td>
+                            <td>起点的y坐标</td>
+                        </tr>
+                        <tr class="warning">
+                            <td>x2</td>
+                            <td>数字</td>
+                            <td>终点的x坐标</td>
+                        </tr>
+                        <tr class="danger">
+                            <td>y2</td>
+                            <td>数字</td>
+                            <td>终点的y坐标</td>
+                        </tr>
+                        <tr class="active">
+                            <td>w</td>
+                            <td>数字</td>
+                            <td>直线段的宽度</td>
+                        </tr>
+                        <tr class="success">
+                            <td>color</td>
+                            <td>字符串</td>
+                            <td>直线段的颜色</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="text-left">
+                    <h3>
+                        <font color="#FA7C7F">&#183;试一试</font>
+                        </h2>
+                </p><br>
+                <a style="width:auto; height:30px; line-height:30px; padding:5px; background-color:#FA7C7F; color:white; border-radius:5px; text-decoration: none;" href="http://ide.youyoucode.cn/lpeduv/1/edit?js,output" target="_blank">画一条红色的直线</a>
+            </div>
+            <div id="rectangle" style="display:none;">
+                <p class="text-left">
+                    <h2>
+                        <font color="#FA7C7F">rectangle函数</font>
+                    </h2>
+                </p><br> 使用rectangle函数可以画出矩形，并改变它的大小和颜色。
+                <br>
+                <p class="text-left">
+                    <h3>
+                        <font color="#FA7C7F">&#183;参数</font>
+                        </h2>
+                </p><br> rectangle(x,y,w,l,color);
+                <br>
+                <table class="table">
+                    <thead>
+                        <tr style="background-color:#70BBB5;">
+                            <th>参数</th>
+                            <th>类型</th>
+                            <th>描述</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="active">
+                            <td>x</td>
+                            <td>数字</td>
+                            <td>矩形左上角的x坐标</td>
+                        </tr>
+                        <tr class="success">
+                            <td>y</td>
+                            <td>数字</td>
+                            <td>矩形左上角的y坐标</td>
+                        </tr>
+                        <tr class="warning">
+                            <td>w</td>
+                            <td>数字</td>
+                            <td>矩形的宽度</td>
+                        </tr>
+                        <tr class="danger">
+                            <td>h</td>
+                            <td>数字</td>
+                            <td>矩形的高度</td>
+                        </tr>
+                        <tr class="active">
+                            <td>color</td>
+                            <td>字符串</td>
+                            <td>矩形的颜色</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="text-left">
+                    <h3>
+                        <font color="#FA7C7F">&#183;试一试</font>
+                        </h2>
+                </p><br>
+                <a style="width:auto; height:30px; line-height:30px; padding:5px; background-color:#FA7C7F; color:white; border-radius:5px; text-decoration: none;" href="http://ide.youyoucode.cn/llijoj/1/edit?js,output" target="_blank">画一个蓝色的矩形</a>
+            </div>
+            <div id="circle" style="display:none;">
+                <p class="text-left">
+                    <h2>
+                        <font color="#FA7C7F">circle函数</font>
+                    </h2>
+                </p><br> 使用circle函数可以画出圆形，并改变它的大小和颜色。
+                <br>
+                <p class="text-left">
+                    <h3>
+                        <font color="#FA7C7F">&#183;参数</font>
+                        </h2>
+                </p><br> circle(x,y,r,color);
+                <br>
+                <table class="table">
+                    <thead>
+                        <tr style="background-color:#70BBB5;">
+                            <th>参数</th>
+                            <th>类型</th>
+                            <th>描述</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="active">
+                            <td>x</td>
+                            <td>数字</td>
+                            <td>圆心的x坐标</td>
+                        </tr>
+                        <tr class="success">
+                            <td>y</td>
+                            <td>数字</td>
+                            <td>圆心的y坐标</td>
+                        </tr>
+                        <tr class="warning">
+                            <td>r</td>
+                            <td>数字</td>
+                            <td>圆的半径</td>
+                        </tr>
+                        <tr class="danger">
+                            <td>color</td>
+                            <td>字符串</td>
+                            <td>圆的颜色</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="text-left">
+                    <h3>
+                        <font color="#FA7C7F">&#183;试一试</font>
+                        </h2>
+                </p><br>
+                <a style="width:auto; height:30px; line-height:30px; padding:5px; background-color:#FA7C7F; color:white; border-radius:5px; text-decoration: none;" href="http://ide.youyoucode.cn/lyades/1/edit?js,output" target="_blank">画一个黄色的圆形</a>
+            </div>
+            <div id="triangle" style="display:none;">
+                <p class="text-left">
+                    <h2>
+                        <font color="#FA7C7F">triangle函数</font>
+                    </h2>
+                </p><br> 使用triangle函数可以画出三角形，并改变它的大小和颜色。
+                <br>
+                <p class="text-left">
+                    <h3>
+                        <font color="#FA7C7F">&#183;参数</font>
+                        </h2>
+                </p><br> triangle(x1,y1,x2,y2,x3,y3,color);
+                <br>
+                <table class="table">
+                    <thead>
+                        <tr style="background-color:#70BBB5;">
+                            <th>参数</th>
+                            <th>类型</th>
+                            <th>描述</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="active">
+                            <td>x1</td>
+                            <td>数字</td>
+                            <td>第一个点的x坐标</td>
+                        </tr>
+                        <tr class="success">
+                            <td>y1</td>
+                            <td>数字</td>
+                            <td>第一个点的y坐标</td>
+                        </tr>
+                        <tr class="warning">
+                            <td>x2</td>
+                            <td>数字</td>
+                            <td>第二个点的x坐标</td>
+                        </tr>
+                        <tr class="danger">
+                            <td>y2</td>
+                            <td>数字</td>
+                            <td>第二个点的y坐标</td>
+                        </tr>
+                        <tr class="active">
+                            <td>x3</td>
+                            <td>数字</td>
+                            <td>第三个点的x坐标</td>
+                        </tr>
+                        <tr class="success">
+                            <td>y3</td>
+                            <td>数字</td>
+                            <td>第三个点的y坐标</td>
+                        </tr>
+                        <tr class="warning">
+                            <td>color</td>
+                            <td>字符串</td>
+                            <td>三角形的颜色</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="text-left">
+                    <h3>
+                        <font color="#FA7C7F">&#183;试一试</font>
+                        </h2>
+                </p><br>
+                <a style="width:auto; height:30px; line-height:30px; padding:5px; background-color:#FA7C7F; color:white; border-radius:5px; text-decoration: none;" href="http://ide.youyoucode.cn/lfezag/1/edit?js,output" target="_blank">画一个绿色的三角形</a>
+            </div>
+            <div id="text" style="display:none;">
+                <p class="text-left">
+                    <h2>
+                        <font color="#FA7C7F">text函数</font>
+                    </h2>
+                </p><br> 使用text函数可以在画布上显示一段文字，你可以改变文字内容、大小和颜色。
+                <br>
+                <p class="text-left">
+                    <h3>
+                        <font color="#FA7C7F">&#183;参数</font>
+                        </h2>
+                </p><br> text(str,x,y,color,size);
+                <br>
+                <table class="table">
+                    <thead>
+                        <tr style="background-color:#70BBB5;">
+                            <th>参数</th>
+                            <th>类型</th>
+                            <th>描述</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="active">
+                            <td>str</td>
+                            <td>字符串</td>
+                            <td>文字的内容</td>
+                        </tr>
+                        <tr class="success">
+                            <td>x</td>
+                            <td>数字</td>
+                            <td>文字起点（左下角）的x坐标</td>
+                        </tr>
+                        <tr class="warning">
+                            <td>y</td>
+                            <td>数字</td>
+                            <td>文字起点（左下角）的y坐标</td>
+                        </tr>
+                        <tr class="danger">
+                            <td>color</td>
+                            <td>字符串</td>
+                            <td>文字的颜色</td>
+                        </tr>
+                        <tr class="active">
+                            <td>size</td>
+                            <td>数字</td>
+                            <td>文字的大小</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="text-left">
+                    <h3>
+                        <font color="#FA7C7F">&#183;试一试</font>
+                        </h2>
+                </p><br>
+                <a style="width:auto; height:30px; line-height:30px; padding:5px; background-color:#FA7C7F; color:white; border-radius:5px; text-decoration: none;" href="http://ide.youyoucode.cn/lmanuv/1/edit?js,output" target="_blank">唐诗一首</a>
+            </div>
+            <div id="image" style="display:none;">
+                <p class="text-left">
+                    <h2>
+                        <font color="#FA7C7F">image函数</font>
+                    </h2>
+                </p><br> 使用image函数可以导入一张图片，让它以指定大小显示在指定位置。
+                <br>
+                <p class="text-left">
+                    <h3>
+                        <font color="#FA7C7F">&#183;参数</font>
+                        </h2>
+                </p><br> image(img,x,y,w,h);
+                <br>
+                <table class="table">
+                    <thead>
+                        <tr style="background-color:#70BBB5;">
+                            <th>参数</th>
+                            <th>类型</th>
+                            <th>描述</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="active">
+                            <td>img</td>
+                            <td>字符串</td>
+                            <td>图片的url</td>
+                        </tr>
+                        <tr class="success">
+                            <td>x</td>
+                            <td>数字</td>
+                            <td>图片左上角的x坐标</td>
+                        </tr>
+                        <tr class="warning">
+                            <td>y</td>
+                            <td>数字</td>
+                            <td>图片左上角的y坐标</td>
+                        </tr>
+                        <tr class="danger">
+                            <td>w</td>
+                            <td>数字</td>
+                            <td>图片的宽度</td>
+                        </tr>
+                        <tr class="active">
+                            <td>h</td>
+                            <td>数字</td>
+                            <td>图片的高度</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="text-left">
+                    <h3>
+                        <font color="#FA7C7F">&#183;试一试</font>
+                        </h2>
+                </p><br>
+                <a style="width:auto; height:30px; line-height:30px; padding:5px; background-color:#FA7C7F; color:white; border-radius:5px; text-decoration: none;" href="http://ide.youyoucode.cn/lmepom/1/edit?js,output" target="_blank">导入立乐教育Logo</a>
+            </div>
+            <div id="playMusic" style="display:none;">
+                <p class="text-left">
+                    <h2>
+                        <font color="#FA7C7F">playMusic函数</font>
+                    </h2>
+                </p><br> 使用playMusic函数可以播放一段音乐。
+                <br>
+                <p class="text-left">
+                    <h3>
+                        <font color="#FA7C7F">&#183;参数</font>
+                        </h2>
+                </p><br> playMusic(music,loop);
+                <br>
+                <table class="table">
+                    <thead>
+                        <tr style="background-color:#70BBB5;">
+                            <th>参数</th>
+                            <th>类型</th>
+                            <th>描述</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="active">
+                            <td>music</td>
+                            <td>字符串</td>
+                            <td>音乐的url</td>
+                        </tr>
+                        <tr class="success">
+                            <td>loop</td>
+                            <td>布尔型</td>
+                            <td>为true循环播放，为false不循环</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="text-left">
+                    <h3>
+                        <font color="#FA7C7F">&#183;试一试</font>
+                        </h2>
+                </p><br>
+                <a style="width:auto; height:30px; line-height:30px; padding:5px; background-color:#FA7C7F; color:white; border-radius:5px; text-decoration: none;" href="http://ide.youyoucode.cn/lbekij/1/edit?js,output" target="_blank">循环播放音乐</a>
+            </div>
+            <div id="random" style="display:none;">
+                <p class="text-left">
+                    <h2>
+                        <font color="#FA7C7F">random函数</font>
+                    </h2>
+                </p><br> 使用random函数可以生成指定范围内的随机数，如random(30,50)将生成一个大于等于30且小于50的随机数。
+                <br>
+                <p class="text-left">
+                    <h3>
+                        <font color="#FA7C7F">&#183;参数</font>
+                        </h2>
+                </p><br> random(min,max);
+                <br>
+                <table class="table">
+                    <thead>
+                        <tr style="background-color:#70BBB5;">
+                            <th>参数</th>
+                            <th>类型</th>
+                            <th>描述</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="active">
+                            <td>min</td>
+                            <td>数字</td>
+                            <td>随机数的最小值</td>
+                        </tr>
+                        <tr class="success">
+                            <td>max</td>
+                            <td>数字</td>
+                            <td>随机数的最大值</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="text-left">
+                    <h3>
+                        <font color="#FA7C7F">&#183;试一试</font>
+                        </h2>
+                </p><br>
+                <a style="width:auto; height:30px; line-height:30px; padding:5px; background-color:#FA7C7F; color:white; border-radius:5px; text-decoration: none;" href="http://ide.youyoucode.cn/lpusug/1/edit?js,output" target="_blank">生成30-60的随机数</a>
+            </div>
+            <div id="detectCollision" style="display:none;">
+                <p class="text-left">
+                    <h2>
+                        <font color="#FA7C7F">detectCollision函数</font>
+                    </h2>
+                </p><br> 使用detectCollision可以检测两个元素是否碰撞。如果碰撞，则返回true；如果没有碰撞，则返回false。
+                <br>
+                <p class="text-left">
+                    <h3>
+                        <font color="#FA7C7F">&#183;参数</font>
+                        </h2>
+                </p><br> detectCollision(x1,y1,w1,h1,x2,y2,w2,h2);
+                <br>
+                <table class="table">
+                    <thead>
+                        <tr style="background-color:#70BBB5;">
+                            <th>参数</th>
+                            <th>类型</th>
+                            <th>描述</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="active">
+                            <td>x1</td>
+                            <td>数字</td>
+                            <td>第一个元素的x坐标</td>
+                        </tr>
+                        <tr class="success">
+                            <td>y1</td>
+                            <td>数字</td>
+                            <td>第一个元素的y坐标</td>
+                        </tr>
+                        <tr class="warning">
+                            <td>w1</td>
+                            <td>数字</td>
+                            <td>第一个元素的宽度</td>
+                        </tr>
+                        <tr class="danger">
+                            <td>h1</td>
+                            <td>数字</td>
+                            <td>第一个元素的高度</td>
+                        </tr>
+                        <tr class="active">
+                            <td>x2</td>
+                            <td>数字</td>
+                            <td>第二个元素的x坐标</td>
+                        </tr>
+                        <tr class="success">
+                            <td>y2</td>
+                            <td>数字</td>
+                            <td>第二个元素的y坐标</td>
+                        </tr>
+                        <tr class="warning">
+                            <td>w2</td>
+                            <td>数字</td>
+                            <td>第二个元素的宽度</td>
+                        </tr>
+                        <tr class="danger">
+                            <td>h2</td>
+                            <td>数字</td>
+                            <td>第二个元素的高度</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="mirrorImage" style="display:none;">
+                <p class="text-left">
+                    <h2>
+                        <font color="#FA7C7F">mirrorImage函数</font>
+                    </h2>
+                </p><br> 使用mirrorImage函数可以左右镜像显示一张图片。
+                <br>
+                <p class="text-left">
+                    <h3>
+                        <font color="#FA7C7F">&#183;参数</font>
+                        </h2>
+                </p><br> mirrorImage(img,x,y,w,h);
+                <br>
+                <table class="table">
+                    <thead>
+                        <tr style="background-color:#70BBB5;">
+                            <th>参数</th>
+                            <th>类型</th>
+                            <th>描述</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="active">
+                            <td>img</td>
+                            <td>字符串</td>
+                            <td>图片的url</td>
+                        </tr>
+                        <tr class="success">
+                            <td>x</td>
+                            <td>数字</td>
+                            <td>图片左上角的x坐标</td>
+                        </tr>
+                        <tr class="warning">
+                            <td>y</td>
+                            <td>数字</td>
+                            <td>图片左上角的y坐标</td>
+                        </tr>
+                        <tr class="danger">
+                            <td>w</td>
+                            <td>数字</td>
+                            <td>图片的宽度</td>
+                        </tr>
+                        <tr class="active">
+                            <td>h</td>
+                            <td>数字</td>
+                            <td>图片的高度</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="text-left">
+                    <h3>
+                        <font color="#FA7C7F">&#183;试一试</font>
+                        </h2>
+                </p><br>
+                <a style="width:auto; height:30px; line-height:30px; padding:5px; background-color:#FA7C7F; color:white; border-radius:5px; text-decoration: none;" href="http://ide.youyoucode.cn/llesum/1/edit?js,output" target="_blank">镜像图片</a>
+            </div>
+        </div>
 
 </body>
+
 </html>

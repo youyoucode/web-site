@@ -31,7 +31,7 @@
             </div>
         </div>
         <div class="js-login-wrapper" id="js-submit-btn">
-            悠悠编程账号登录
+            码力编程账号登录
         </div>
     </div>
 </body>
@@ -105,7 +105,7 @@
                 $("#js-submit-btn").text("登录中...");
                 //$("#js-submit-btn").val("登录中...").addClass("btn-disabled").attr("disabled", "disabled");
                 $.ajax({
-                    url: "http://sso.malichina.com/api/users/login",
+                    url: "http://sso.youyoucode.cn/api/users/login",
                     type: "post",
                     data: user,
                     dataType: "json",
@@ -137,7 +137,7 @@
                             // if (window.location.href.indexOf("redirect=") >= 0) {
                             //     var vals = window.location.href.split("redirect=");
                             //     window.location.replace("http://" + vals[1] + "?mobile=" + user.email);
-                            // } else window.location.replace("/");
+                            // } else window.location.replace("http://www.youyoucode.cn");
                         } else {
                             //$("#js-password .message").css('visibility', "visible");
                         }
@@ -146,7 +146,7 @@
                         alert("请输入正确的用户名和密码");
                         $(".phone").val("");
                         $(".password").val("");
-                        $("#js-submit-btn").text("悠悠编程账号登录");
+                        $("#js-submit-btn").text("码力编程账号登录");
                         //$("#js-password .message").css('visibility', "visible");
                     }
                 });

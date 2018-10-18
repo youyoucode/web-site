@@ -1,0 +1,356 @@
+@font-face {
+    font-family: "icon-k12";
+    src: url('http://icon.nosdn.127.net/78bdc3a561bc76831d4235d9e9a427c5.eot');
+    src: url('http://icon.nosdn.127.net/78bdc3a561bc76831d4235d9e9a427c5.eot') format('embedded-opentype'), url('http://icon.nosdn.127.net/34a5410361f71352e2afc9b0f1ac823e.ttf') format('truetype'), url('http://icon.nosdn.127.net/d0a427e003af9df0f2d02cb34e5413f6.woff') format('woff'), url('http://icon.nosdn.127.net/cb81d3ff42938177f64b30401ff0e514.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-k12-"],
+[class*=" icon-k12-"] {
+    font-family: "icon-k12" !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    text-decoration: none;
+    text-transform: none;
+    line-height: 1;
+}
+
+.icon-k12-attachment:before {
+    content: "\EA01";
+}
+
+.icon-k12-back:before {
+    content: "\EA02";
+}
+
+.icon-k12-class_manage:before {
+    content: "\EA03";
+}
+
+.icon-k12-collect:before {
+    content: "\EA04";
+}
+
+.icon-k12-comment:before {
+    content: "\EA05";
+}
+
+.icon-k12-consult:before {
+    content: "\EA06";
+}
+
+.icon-k12-course:before {
+    content: "\EA07";
+}
+
+.icon-k12-course_resources:before {
+    content: "\EA08";
+}
+
+.icon-k12-create:before {
+    content: "\EA09";
+}
+
+.icon-k12-delete:before {
+    content: "\EA0A";
+}
+
+.icon-k12-detail:before {
+    content: "\EA0B";
+}
+
+.icon-k12-download:before {
+    content: "\EA0C";
+}
+
+.icon-k12-file:before {
+    content: "\EA0D";
+}
+
+.icon-k12-help:before {
+    content: "\EA0E";
+}
+
+.icon-k12-knowledge_card:before {
+    content: "\EA0F";
+}
+
+.icon-k12-like:before {
+    content: "\EA10";
+}
+
+.icon-k12-match:before {
+    content: "\EA11";
+}
+
+.icon-k12-more:before {
+    content: "\EA12";
+}
+
+.icon-k12-my_resources:before {
+    content: "\EA13";
+}
+
+.icon-k12-my_work:before {
+    content: "\EA14";
+}
+
+.icon-k12-news:before {
+    content: "\EA15";
+}
+
+.icon-k12-phone:before {
+    content: "\EA16";
+}
+
+.icon-k12-play:before {
+    content: "\EA17";
+}
+
+.icon-k12-post:before {
+    content: "\EA18";
+}
+
+.icon-k12-prompt:before {
+    content: "\EA19";
+}
+
+.icon-k12-qq:before {
+    content: "\EA1A";
+}
+
+.icon-k12-scan:before {
+    content: "\EA1B";
+}
+
+.icon-k12-search:before {
+    content: "\EA1C";
+}
+
+.icon-k12-share:before {
+    content: "\EA1D";
+}
+
+.icon-k12-sidebar:before {
+    content: "\EA1E";
+}
+
+.icon-k12-student_manage:before {
+    content: "\EA1F";
+}
+
+.icon-k12-submit:before {
+    content: "\EA20";
+}
+
+.icon-k12-task:before {
+    content: "\EA21";
+}
+
+.icon-k12-task_end:before {
+    content: "\EA22";
+}
+
+.icon-k12-task_ongoing:before {
+    content: "\EA23";
+}
+
+.icon-k12-telephone:before {
+    content: "\EA24";
+}
+
+.icon-k12-to_create:before {
+    content: "\EA25";
+}
+
+.icon-k12-top:before {
+    content: "\EA26";
+}
+
+.icon-k12-topic:before {
+    content: "\EA27";
+}
+
+.icon-k12-view:before {
+    content: "\EA28";
+}
+
+.icon-k12-wechat:before {
+    content: "\EA29";
+}
+
+.icon-k12-work:before {
+    content: "\EA2A";
+}
+
+.icon-k12-attachment-after:after {
+    content: "\EA01";
+}
+
+.icon-k12-back-after:after {
+    content: "\EA02";
+}
+
+.icon-k12-class_manage-after:after {
+    content: "\EA03";
+}
+
+.icon-k12-collect-after:after {
+    content: "\EA04";
+}
+
+.icon-k12-comment-after:after {
+    content: "\EA05";
+}
+
+.icon-k12-consult-after:after {
+    content: "\EA06";
+}
+
+.icon-k12-course-after:after {
+    content: "\EA07";
+}
+
+.icon-k12-course_resources-after:after {
+    content: "\EA08";
+}
+
+.icon-k12-create-after:after {
+    content: "\EA09";
+}
+
+.icon-k12-delete-after:after {
+    content: "\EA0A";
+}
+
+.icon-k12-detail-after:after {
+    content: "\EA0B";
+}
+
+.icon-k12-download-after:after {
+    content: "\EA0C";
+}
+
+.icon-k12-file-after:after {
+    content: "\EA0D";
+}
+
+.icon-k12-help-after:after {
+    content: "\EA0E";
+}
+
+.icon-k12-knowledge_card-after:after {
+    content: "\EA0F";
+}
+
+.icon-k12-like-after:after {
+    content: "\EA10";
+}
+
+.icon-k12-match-after:after {
+    content: "\EA11";
+}
+
+.icon-k12-more-after:after {
+    content: "\EA12";
+}
+
+.icon-k12-my_resources-after:after {
+    content: "\EA13";
+}
+
+.icon-k12-my_work-after:after {
+    content: "\EA14";
+}
+
+.icon-k12-news-after:after {
+    content: "\EA15";
+}
+
+.icon-k12-phone-after:after {
+    content: "\EA16";
+}
+
+.icon-k12-play-after:after {
+    content: "\EA17";
+}
+
+.icon-k12-post-after:after {
+    content: "\EA18";
+}
+
+.icon-k12-prompt-after:after {
+    content: "\EA19";
+}
+
+.icon-k12-qq-after:after {
+    content: "\EA1A";
+}
+
+.icon-k12-scan-after:after {
+    content: "\EA1B";
+}
+
+.icon-k12-search-after:after {
+    content: "\EA1C";
+}
+
+.icon-k12-share-after:after {
+    content: "\EA1D";
+}
+
+.icon-k12-sidebar-after:after {
+    content: "\EA1E";
+}
+
+.icon-k12-student_manage-after:after {
+    content: "\EA1F";
+}
+
+.icon-k12-submit-after:after {
+    content: "\EA20";
+}
+
+.icon-k12-task-after:after {
+    content: "\EA21";
+}
+
+.icon-k12-task_end-after:after {
+    content: "\EA22";
+}
+
+.icon-k12-task_ongoing-after:after {
+    content: "\EA23";
+}
+
+.icon-k12-telephone-after:after {
+    content: "\EA24";
+}
+
+.icon-k12-to_create-after:after {
+    content: "\EA25";
+}
+
+.icon-k12-top-after:after {
+    content: "\EA26";
+}
+
+.icon-k12-topic-after:after {
+    content: "\EA27";
+}
+
+.icon-k12-view-after:after {
+    content: "\EA28";
+}
+
+.icon-k12-wechat-after:after {
+    content: "\EA29";
+}
+
+.icon-k12-work-after:after {
+    content: "\EA2A";
+}

@@ -1,187 +1,192 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
+
 <head>
-<meta charset="utf-8" />
-<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="index.css">
-<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<style>
-
-	.class_list {
-		list-style: none;
-		width:100%;
-		height:45px;
-		line-height: 45px;
-		background-color: #FFFFFF;
-		margin-top:10px;
-		padding:0px 2%;
-		float:left;
-		text-align:left;
-		color: black;
-		border: solid #70BBB5;
-		border-width:2px;
-	}
-	.class_btn {
-		width:auto;
-		height:30px;
-		line-height: 30px;
-		background-color: #70BBB5;
-		margin-top:5px;
-		margin-left:5px;
-		padding:0 8px;
-		float:right;
-		text-align:center;
-		color: white;
-		font-size: 12px;
-		text-decoration:none;
-		border-radius:5px;
-	}
-	.nav1	{
-		height:70px;
-		line-height: 70px;
-		background-color: #70BBB5;
-		padding:0;
-		margin:0;
-	}
-
-	.nav_li {
-		float:right;
-		margin-left:30px;
-		height:70px;
-		line-height: 70px;
-	}
-
-</style>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        .class_list {
+            list-style: none;
+            width: 100%;
+            height: 45px;
+            line-height: 45px;
+            background-color: #FFFFFF;
+            margin-top: 10px;
+            padding: 0px 2%;
+            float: left;
+            text-align: left;
+            color: black;
+            border: solid #70BBB5;
+            border-width: 2px;
+        }
+        
+        .class_btn {
+            width: auto;
+            height: 30px;
+            line-height: 30px;
+            background-color: #70BBB5;
+            margin-top: 5px;
+            margin-left: 5px;
+            padding: 0 8px;
+            float: right;
+            text-align: center;
+            color: white;
+            font-size: 12px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        
+        .nav1 {
+            height: 70px;
+            line-height: 70px;
+            background-color: #70BBB5;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .nav_li {
+            float: right;
+            margin-left: 30px;
+            height: 70px;
+            line-height: 70px;
+        }
+    </style>
 </head>
+
 <body style="margin:0; padding:0;">
-<div class="nav1">
-	<div class="nav_box">
-		<a href="./all_class.html"><div id="logo" ></div></a>
-		<ul class="nav_menu">
-			<!--li class="nav_li">
+    <div class="nav1">
+        <div class="nav_box">
+            <a href="./all_class.html">
+                <div id="logo"></div>
+            </a>
+            <ul class="nav_menu">
+                <!--li class="nav_li">
 				<a class="nav_text" href="./resource.html">素材库</a>
 			</li
 			<li class="nav_li">
 				<a class="nav_text" href="./other_files.html">资料库</a>
 			</li>-->
-			<li class="nav_li">
-				<a class="nav_text" href="./wiki.html">知识库</a>
-			</li>
-			<li class="nav_li">
-				<a class="nav_text" href="./all_class.html">课程表</a>
-			</li>
-			<li class="nav_li">
-				<a class="nav_text" href="./all_class.html">课程内容</a>
-			</li>
-		</ul>
-	</div>
-</div>
-<div style="height:50px; width:70%; margin:0px auto; line-height:50px; text-align: left; font-size: 20px;">体验课列表</div>
+                <li class="nav_li">
+                    <a class="nav_text" href="./wiki.html">知识库</a>
+                </li>
+                <li class="nav_li">
+                    <a class="nav_text" href="./all_class.html">课程表</a>
+                </li>
+                <li class="nav_li">
+                    <a class="nav_text" href="./all_class.html">课程内容</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div style="height:50px; width:70%; margin:0px auto; line-height:50px; text-align: left; font-size: 20px;">体验课列表</div>
 
-<div style="width:70%;margin:0px auto;padding-top:0px;">
-	<ul id="myTab" class="nav nav-tabs">
-		<li class="active">
-			<a href="#demo" data-toggle="tab">常规体验课</a>
-		</li>
-		<li>
-			<a href="#festival" data-toggle="tab">活动体验课</a>
-		</li>
-	</ul>
-</div>
+    <div style="width:70%;margin:0px auto;padding-top:0px;">
+        <ul id="myTab" class="nav nav-tabs">
+            <li class="active">
+                <a href="#demo" data-toggle="tab">常规体验课</a>
+            </li>
+            <li>
+                <a href="#festival" data-toggle="tab">活动体验课</a>
+            </li>
+        </ul>
+    </div>
 
-<div class="main_div">
-	<div id="myTabContent" class="tab-content">
-		<div class="tab-pane fade in active" id="demo">
-		    <ul class="class_ul">
-		    	<li class="class_list">Lv0《神奇礼物》女生版&nbsp;&nbsp;&nbsp;☆☆&nbsp;&nbsp;&nbsp;45mins
-			    	<!--
+    <div class="main_div">
+        <div id="myTabContent" class="tab-content">
+            <div class="tab-pane fade in active" id="demo">
+                <ul class="class_ul">
+                    <li class="class_list">Lv0《神奇礼物》女生版&nbsp;&nbsp;&nbsp;☆☆&nbsp;&nbsp;&nbsp;45mins
+                        <!--
 					<a class="class_btn" href="" target="_blank">课后习题</a>
 					<a class="class_btn" href="./wiki.html" target="_self">参考知识</a>
 					-->
-					<a class="class_btn" href="http://ide.codeweilai.com/lvizer/1/edit?js,output" target="_blank">上课链接</a>
-					<a class="class_btn" href="http://ide.codeweilai.com/lvizer/1" target="_blank">成品演示</a>
-		    	</li>
-		    	<li class="class_list">Lv0《神奇礼物》男生版&nbsp;&nbsp;&nbsp;☆☆&nbsp;&nbsp;&nbsp;45mins
-					<!--
+                        <a class="class_btn" href="http://ide.youyoucode.cn/lvizer/1/edit?js,output" target="_blank">上课链接</a>
+                        <a class="class_btn" href="http://ide.youyoucode.cn/lvizer/1" target="_blank">成品演示</a>
+                    </li>
+                    <li class="class_list">Lv0《神奇礼物》男生版&nbsp;&nbsp;&nbsp;☆☆&nbsp;&nbsp;&nbsp;45mins
+                        <!--
 			    	<a class="class_btn" href="" target="_blank">课后习题</a>
 					<a class="class_btn" href="./wiki.html" target="_self">参考知识</a>
 					-->
-					<a class="class_btn" href="http://ide.codeweilai.com/lvizer/1/edit?js,output" target="_blank">上课链接</a>
-					<a class="class_btn" href="http://ide.codeweilai.com/lvizer/1" target="_blank">成品演示</a>
-		    	</li>
-		    	<li class="class_list">Lv0《小小画家》体验课&nbsp;&nbsp;&nbsp;☆☆☆&nbsp;&nbsp;&nbsp;45mins
-					<!--
+                        <a class="class_btn" href="http://ide.youyoucode.cn/lvizer/1/edit?js,output" target="_blank">上课链接</a>
+                        <a class="class_btn" href="http://ide.youyoucode.cn/lvizer/1" target="_blank">成品演示</a>
+                    </li>
+                    <li class="class_list">Lv0《小小画家》体验课&nbsp;&nbsp;&nbsp;☆☆☆&nbsp;&nbsp;&nbsp;45mins
+                        <!--
 			    	<a class="class_btn" href="" target="_blank">课后习题</a>
 					<a class="class_btn" href="./wiki.html" target="_self">参考知识</a>
 					-->
-					<a class="class_btn" href="" target="_blank">上课链接</a>
-					<a class="class_btn" href="" target="_blank">成品演示</a>
-				</li>
-		    	<li class="class_list">Lv0《装饰圣诞树》体验课&nbsp;&nbsp;&nbsp;☆☆☆&nbsp;&nbsp;&nbsp;45mins
-					<!--
+                        <a class="class_btn" href="" target="_blank">上课链接</a>
+                        <a class="class_btn" href="" target="_blank">成品演示</a>
+                    </li>
+                    <li class="class_list">Lv0《装饰圣诞树》体验课&nbsp;&nbsp;&nbsp;☆☆☆&nbsp;&nbsp;&nbsp;45mins
+                        <!--
 			    	<a class="class_btn" href="" target="_blank">课后习题</a>
-					<a class="class_btn" href="http://ide.codeweilai.com/lrumak/1/edit" target="_self">参考知识</a>
+					<a class="class_btn" href="http://ide.youyoucode.cn/lrumak/1/edit" target="_self">参考知识</a>
 					-->
-					<a class="class_btn" href="http://ide.codeweilai.com/lrumak/1/edit?js,output" target="_blank">上课链接</a>
-					<a class="class_btn" href="" target="_blank">成品演示</a>
-				</li>				
-			    <li class="class_list">Lv1《青蛙接蛋》体验课&nbsp;&nbsp;&nbsp;☆☆☆☆&nbsp;&nbsp;&nbsp;45mins
-					<!--
+                        <a class="class_btn" href="http://ide.youyoucode.cn/lrumak/1/edit?js,output" target="_blank">上课链接</a>
+                        <a class="class_btn" href="" target="_blank">成品演示</a>
+                    </li>
+                    <li class="class_list">Lv1《青蛙接蛋》体验课&nbsp;&nbsp;&nbsp;☆☆☆☆&nbsp;&nbsp;&nbsp;45mins
+                        <!--
 			    	<a class="class_btn" href="" target="_blank">课后习题</a>
 					<a class="class_btn" href="./wiki.html" target="_self">参考知识</a>
 					-->
-					<a class="class_btn" href="http://ide.codeweilai.com/lculet/1/edit?js,output" target="_blank">上课链接</a>
-					<a class="class_btn" href="http://ide.codeweilai.com/lculet/1" target="_blank">成品演示</a>
-		    	</li>
-			    <li class="class_list">Lv1《超级酷跑》体验课&nbsp;&nbsp;&nbsp;☆☆☆☆&nbsp;&nbsp;&nbsp;45mins
-					<!--
+                        <a class="class_btn" href="http://ide.youyoucode.cn/lculet/1/edit?js,output" target="_blank">上课链接</a>
+                        <a class="class_btn" href="http://ide.youyoucode.cn/lculet/1" target="_blank">成品演示</a>
+                    </li>
+                    <li class="class_list">Lv1《超级酷跑》体验课&nbsp;&nbsp;&nbsp;☆☆☆☆&nbsp;&nbsp;&nbsp;45mins
+                        <!--
 			    	<a class="class_btn" href="http://ou1htxdl4.bkt.clouddn.com/demo/%E3%80%8A%E8%B6%85%E7%BA%A7%E9%85%B7%E8%B7%91%E3%80%8B%E7%9F%A5%E8%AF%86%E5%B0%8F%E7%BB%93.jpg" target="_blank">知识小结</a>
 					<a class="class_btn" href="http://ou1htxdl4.bkt.clouddn.com/super%20poke%20PPT.pdf" target="_blank">课件链接</a>
 					-->
-					<a class="class_btn" href="http://ide.codeweilai.com/lyudod/1/edit?js,output" target="_blank">上课链接</a>
-					<a class="class_btn" href="http://ide.codeweilai.com/lem/1" target="_blank">成品演示</a>
-					<a class="class_btn" href="http://ide.codeweilai.com/lmicas/1/" target="_blank">优秀作品</a>
-				</li>
-				
-		    	<li class="class_list">Lv2《神奇时钟》体验课&nbsp;&nbsp;&nbsp;☆☆☆☆&nbsp;&nbsp;&nbsp;45mins
-					<!--
+                        <a class="class_btn" href="http://ide.youyoucode.cn/lyudod/1/edit?js,output" target="_blank">上课链接</a>
+                        <a class="class_btn" href="http://ide.youyoucode.cn/lem/1" target="_blank">成品演示</a>
+                        <a class="class_btn" href="http://ide.youyoucode.cn/lmicas/1/" target="_blank">优秀作品</a>
+                    </li>
+
+                    <li class="class_list">Lv2《神奇时钟》体验课&nbsp;&nbsp;&nbsp;☆☆☆☆&nbsp;&nbsp;&nbsp;45mins
+                        <!--
 					<a class="class_btn" href="http://ou1htxdl4.bkt.clouddn.com/%E3%80%8A%E7%A5%9E%E5%A5%87%E6%97%B6%E9%92%9F%E3%80%8B%E8%AF%BE%E5%90%8E%E4%B9%A0%E9%A2%98-02.jpg" target="_blank">课后习题</a>
 					<a class="class_btn" href="http://ou1htxdl4.bkt.clouddn.com/%E3%80%8A%E7%A5%9E%E5%A5%87%E6%97%B6%E9%92%9F%E3%80%8B%E7%9F%A5%E8%AF%86%E7%82%B9%E5%B0%8F%E7%BB%93-02.jpg" target="_blank">知识小结</a>
 					-->
-					<a class="class_btn" href="http://ide.codeweilai.com/lfayon/1/edit?js,output" target="_blank">上课链接</a>
-					<a class="class_btn" href="http://ide.codeweilai.com/lyelex/1/" target="_blank">成品演示</a>
-				</li>
-				
-		    	<li class="class_list">Lv2《飞机大战》体验课&nbsp;&nbsp;&nbsp;☆☆☆☆☆&nbsp;&nbsp;&nbsp;45mins
-			    	<a class="class_btn" href="http://ou1htxdl4.bkt.clouddn.com/%E3%80%8A%E9%A3%9E%E6%9C%BA%E5%A4%A7%E6%88%98%E3%80%8B%E8%AF%BE%E5%90%8E%E6%80%9D%E8%80%83%E9%A2%98.docx" target="_blank">课后习题</a>
-					<a class="class_btn" href="http://ou1htxdl4.bkt.clouddn.com/demo/flyer/flyer_demo.pdf" target="_blank">课件链接</a>
-					<a class="class_btn" href="http://ide.codeweilai.com/ltivus/1/edit?js,output" target="_blank">上课链接</a>
-					<a class="class_btn" href="http://ide.codeweilai.com/lzusar/1" target="_blank">成品演示</a>
-				</li>
-				<!--
+                        <a class="class_btn" href="http://ide.youyoucode.cn/lfayon/1/edit?js,output" target="_blank">上课链接</a>
+                        <a class="class_btn" href="http://ide.youyoucode.cn/lyelex/1/" target="_blank">成品演示</a>
+                    </li>
+
+                    <li class="class_list">Lv2《飞机大战》体验课&nbsp;&nbsp;&nbsp;☆☆☆☆☆&nbsp;&nbsp;&nbsp;45mins
+                        <a class="class_btn" href="http://ou1htxdl4.bkt.clouddn.com/%E3%80%8A%E9%A3%9E%E6%9C%BA%E5%A4%A7%E6%88%98%E3%80%8B%E8%AF%BE%E5%90%8E%E6%80%9D%E8%80%83%E9%A2%98.docx" target="_blank">课后习题</a>
+                        <a class="class_btn" href="http://ou1htxdl4.bkt.clouddn.com/demo/flyer/flyer_demo.pdf" target="_blank">课件链接</a>
+                        <a class="class_btn" href="http://ide.youyoucode.cn/ltivus/1/edit?js,output" target="_blank">上课链接</a>
+                        <a class="class_btn" href="http://ide.youyoucode.cn/lzusar/1" target="_blank">成品演示</a>
+                    </li>
+                    <!--
 		    	<li class="class_list">Lv2《开心水族馆》体验课&nbsp;&nbsp;&nbsp;☆☆☆☆☆&nbsp;&nbsp;&nbsp;45mins
 			    	<a class="class_btn" href="" target="_blank">课后习题</a>
 					<a class="class_btn" href="./wiki.html" target="_blank">参考知识</a>
-					<a class="class_btn" href="http://ide.codeweilai.com/lvopen/1/edit?js,output" target="_blank">上课链接</a>
-					<a class="class_btn" href="http://ide.codeweilai.com/lvopen/1" target="_blank">成品演示</a>
+					<a class="class_btn" href="http://ide.youyoucode.cn/lvopen/1/edit?js,output" target="_blank">上课链接</a>
+					<a class="class_btn" href="http://ide.youyoucode.cn/lvopen/1" target="_blank">成品演示</a>
 				</li>
-				-->				
-		    </ul>
-		</div>
-		<div class="tab-pane fade" id="festival">
-			<ul class="class_ul">
-		    	<li class="class_list">万圣节活动《疯狂万圣节》&nbsp;&nbsp;&nbsp;45mins
-					<!--
+				-->
+                </ul>
+            </div>
+            <div class="tab-pane fade" id="festival">
+                <ul class="class_ul">
+                    <li class="class_list">万圣节活动《疯狂万圣节》&nbsp;&nbsp;&nbsp;45mins
+                        <!--
 			    	<a class="class_btn" href="http://ou1htxdl4.bkt.clouddn.com/%E4%B8%87%E5%9C%A3%E8%8A%82%E4%BD%93%E9%AA%8C%E8%AF%BE%E8%AF%BE%E5%90%8E%E4%B9%A0%E9%A2%98%20.docx" target="_blank">课后习题</a>
 					<a class="class_btn" href="http://ou1htxdl4.bkt.clouddn.com/%E4%B8%87%E5%9C%A3%E8%8A%82%E4%BD%93%E9%AA%8C%E8%AF%BE%E7%9F%A5%E8%AF%86%E5%B0%8F%E7%BB%93.jpg" target="_self">知识小结</a>
 					-->
-					<a class="class_btn" href="http://ide.codeweilai.com/lcuqoc/1/edit?js,output" target="_blank">上课链接</a>
-					<a class="class_btn" href="http://ide.codeweilai.com/lmesof/1" target="_blank">成品演示</a>
-		    	</li>
-		    </ul>
-		</div>
-	</div>
-</div>
+                        <a class="class_btn" href="http://ide.youyoucode.cn/lcuqoc/1/edit?js,output" target="_blank">上课链接</a>
+                        <a class="class_btn" href="http://ide.youyoucode.cn/lmesof/1" target="_blank">成品演示</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>

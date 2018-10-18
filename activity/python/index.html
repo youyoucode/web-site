@@ -1,8 +1,9 @@
 <!DOCTYPE HTML>
 <html>
+
 <head>
     <meta charset="utf-8">
-    <title>悠悠青少儿编程</title>
+    <title>码上未来青少儿编程</title>
     <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="full-screen" content="true" />
@@ -12,11 +13,12 @@
     <meta http-equiv="Access-Control-Allow-Origin" content="*" />
     <link rel="stylesheet" href="css/index.css" type="text/css" />
 </head>
-<body id = "bodyid">
+
+<body id="bodyid">
     <div id="banner">
-        <a href="/" target="_blank" id="logo-image" title="官网"><img src="resource/assets/logo.png" /></a>
+        <a href="http://www.youyoucode.cn/" target="_blank" id="logo-image" title="官网"><img src="resource/assets/logo.png" /></a>
         <div id="toolbar-file" class="container-flex">
-            <div id="toolbar-item-file"  class="nav-chunk">
+            <div id="toolbar-item-file" class="nav-chunk">
                 <div class="dropdown" id="dropdown-file">
                     <div class="dropdown-toggle">文件<img class="icon-arrow-down" src="resource/assets/dropdown-arrow.svg"></div>
                     <div class="dropdown-content" id="dropdown-content-file" style="display: none;">
@@ -40,7 +42,10 @@
                         <div class="toolbar-dropdown-right-border"></div>
                         <div class="toolbar-dropdown identify" id="share">
                             <div id="share-identify-wrapper">
-                                <div id="share-content-text"><p>扫描二维码或复制链接</p><p>把项目分享出去</p></div>
+                                <div id="share-content-text">
+                                    <p>扫描二维码或复制链接</p>
+                                    <p>把项目分享出去</p>
+                                </div>
                                 <div id="share-content-qrcode"></div>
                                 <textarea id="share-content-urltext" readonly="randonly"></textarea>
                             </div>
@@ -65,7 +70,7 @@
             <div id="navbar-login" class=" nav-chunk">
                 <div id="navbar-login-inner">
                     <div id="navbar-anonymous" class="strobe" style="height: 10px;">
-                        <a target="_blank" href="/login/signup.html?redirect=www.codeweilai.com/ide" title="创建一个账号"><span title="账号登录" id="signup-link">创建账号</span></a>
+                        <a target="_blank" href="http://www.youyoucode.cn/login/signup.html?redirect=www.youyoucode.cn/ide" title="创建一个账号"><span title="账号登录" id="signup-link">创建账号</span></a>
                         <span title="账号登录" id="login-link">&nbsp&nbsp&nbsp登录&nbsp&nbsp&nbsp</span>
                     </div>
                 </div>
@@ -84,22 +89,28 @@
     </div>
     <div id="banner-left"></div>
     <div id="content-left">
-        <div title="绘图函数"  id="btn-function" class="left-btn-skin">
+        <div title="绘图函数" id="btn-function" class="left-btn-skin">
             <img src="resource/assets/brush.svg">
             <span>绘图函数</span>
         </div>
-        <div id="btn-function-content"><div class="left-arrow-tip"></div></div>
-        <div title="添加代码"  id="btn-insert" class="left-btn-skin">
+        <div id="btn-function-content">
+            <div class="left-arrow-tip"></div>
+        </div>
+        <div title="添加代码" id="btn-insert" class="left-btn-skin">
             <img src="resource/assets/code.svg">
             <span>基础函数</span>
         </div>
-        <div id="btn-insert-content"><div class="left-arrow-tip"></div></div>
-        <div title="素材资源"  id="btn-picture" class="left-btn-skin">
+        <div id="btn-insert-content">
+            <div class="left-arrow-tip"></div>
+        </div>
+        <div title="素材资源" id="btn-picture" class="left-btn-skin">
             <img src="resource/assets/picture.svg">
             <span>图片素材</span>
         </div>
-        <div id="btn-picture-content"><div class="left-arrow-tip"></div></div>
-        <div title="我的课表"  id="btn-classlist" class="left-btn-skin"><img src="resource/assets/computer.svg"></div>
+        <div id="btn-picture-content">
+            <div class="left-arrow-tip"></div>
+        </div>
+        <div title="我的课表" id="btn-classlist" class="left-btn-skin"><img src="resource/assets/computer.svg"></div>
     </div>
     <div id="content-top">
         <div id="content-top-left">
@@ -124,7 +135,7 @@
                         <img src="resource/assets/btn_tool_link.png">
                     </div>
                     <div id="editor-pane-nav-snippets-menu" style="display: none;">
-                        <textarea  id="editor-pane-nav-snippets-menu-input"  spellcheck="false" class="text-input" style="display: inline;"></textarea>
+                        <textarea id="editor-pane-nav-snippets-menu-input" spellcheck="false" class="text-input" style="display: inline;"></textarea>
                         <div class="arrow-tip"></div>
                         <button class="menu-button-confirm" id="editor-pane-nav-snippets-menu-btn">转化地址</button>
                     </div>
@@ -189,11 +200,16 @@
         <div id="menu-content-pen"></div>
         <div id="menu-content-eraser"></div>
     </div>
-    <div id="switch-left"><div id="switch-left-icon"></div></div>
+    <div id="switch-left">
+        <div id="switch-left-icon"></div>
+    </div>
     <div id="content">
         <iframe id="drawBoard" frameborder="0"></iframe>
-        <div id='game-area' class="egret-player" style="display:none" data-entry-class="Main" data-orientation="auto" data-scale-mode="noScale" data-frame-rate="30" data-content-width="45%" data-content-height="100%" data-show-paint-rect="false" data-multi-fingered="2" data-show-fps="false" data-show-log="false" data-show-fps-style="x:0,y:0,size:12,textColor:0x000000,bgAlpha:1"></div>
-        <div id="drag-line"><div id="drag-line-gap"></div></div>
+        <div id='game-area' class="egret-player" style="display:none" data-entry-class="Main" data-orientation="auto" data-scale-mode="noScale" data-frame-rate="30" data-content-width="45%" data-content-height="100%" data-show-paint-rect="false" data-multi-fingered="2"
+            data-show-fps="false" data-show-log="false" data-show-fps-style="x:0,y:0,size:12,textColor:0x000000,bgAlpha:1"></div>
+        <div id="drag-line">
+            <div id="drag-line-gap"></div>
+        </div>
         <div id="code-area"></div>
         <div id='problem-alert-view'></div>
         <div id='ui-ruler' style="position: absolute;display: none">
@@ -313,8 +329,8 @@
                 </p>
                 <div id="loginButton" class="login-button btn btn-awsm">登录</div>
                 <p class="login_link">
-                    <a href="http://sso.malichina.com/#/finding" target="_blank" id="resetPassword">忘记密码</a> |
-                    <a href="/login/signup.html" target="_blank" id="signUp">注册</a>
+                    <a href="http://sso.youyoucode.cn/#/finding" target="_blank" id="resetPassword">忘记密码</a> |
+                    <a href="http://www.youyoucode.cn/login/signup.html" target="_blank" id="signUp">注册</a>
                 </p>
             </div>
         </div>
@@ -338,7 +354,7 @@
     <script egret="lib" src="libs/modules/pomelo/PomeloClient.js" src-release="libs/modules/pomelo/PomeloClient.js"></script>
     <!--modules_files_end-->
     <!--这个标签为不通过egret提供的第三方库的方式使用的 javascript 文件，请将这些文件放在libs下，但不要放在modules下面。-->
-   <!--other_libs_files_start-->
+    <!--other_libs_files_start-->
     <script egret="lib" src="polyfill/promise.js" src-release="polyfill/promise.min.js"></script>
     <!--other_libs_files_end-->
     <script src="lib/ace/zatanna/zatanna.js"></script>
@@ -352,4 +368,5 @@
     <script src="libs/marked.min.js"></script>
     <script src="libs/modules/jmd5/jquery.md5.js"></script>
 </body>
+
 </html>

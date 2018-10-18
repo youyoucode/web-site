@@ -12,7 +12,7 @@ $signPackage = $jssdk->GetSignPackage();
   <script src="./resource/web.js"></script>
   <script src="http://sdk.talkingdata.com/app/h5/v1?appid=1D451590A3384A7F850D3716B6255229&vn=mali_201801&vc=1.0.0"></script>
   <link rel="stylesheet" media="all" href="./resource/web.css">
-  <title>悠悠青少儿编程-暑假班</title>
+  <title>码力青少儿编程-暑假班</title>
 </head>
 <body data-no-turbolink="" id="web-general-dm4">
   <div class="dm">
@@ -38,7 +38,7 @@ $signPackage = $jssdk->GetSignPackage();
     <img width="100%" src="./resource/p5.jpg" alt="P5">
     <div id="fixed-bottom-nav">
       <div class="fixed-box" style="display: block;">
-        <a href="/wx/pay/jsapi.php" target="_blank">
+        <a href="http://www.youyoucode.cn/wx/pay/jsapi.php" target="_blank">
           <img  width="100%" height="100%" src="./resource/yuanjia.jpg">
         </a>
       </div>
@@ -62,9 +62,9 @@ $signPackage = $jssdk->GetSignPackage();
   wx.ready(function () {
     document.getElementById('fixed-bottom-nav').style.display = "block";
     wx.onMenuShareTimeline({
-        title: "悠悠青少儿编程-暑假班",  
-        link: "/wx/",  
-        imgUrl: "/wx/resource/apple-touch-icon.png",  
+        title: "码力青少儿编程-暑假班",  
+        link: "http://www.youyoucode.cn/wx/",  
+        imgUrl: "http://www.youyoucode.cn/wx/resource/apple-touch-icon.png",  
         success: function () {
             
         },
@@ -75,9 +75,9 @@ $signPackage = $jssdk->GetSignPackage();
  
     wx.onMenuShareAppMessage({
         desc: "8-15岁适用，零基础班， 严选专属老师在线授课，让孩子在家入门真正的编程",  
-        title: "悠悠编程暑假营|￥199元8节，在家学人工智能语言",
-        link: "/wx/",
-        imgUrl: "/wx/resource/apple-touch-icon.png",  
+        title: "码力编程暑假营|￥199元8节，在家学人工智能语言",
+        link: "http://www.youyoucode.cn/wx/",
+        imgUrl: "http://www.youyoucode.cn/wx/resource/apple-touch-icon.png",  
         type: 'link',  
         dataUrl: '',  
         success: function () { 
