@@ -15,7 +15,7 @@ $openId = $tools->GetOpenid();
 
 //②、统一下单
 $input = new WxPayUnifiedOrder();
-$input->SetBody("悠悠编程 常规班");
+$input->SetBody("码力编程 常规班");
 $input->SetAttach("test");
 $Out_trade_no = WxPayConfig::MCHID.date("YmdHis");
 $input->SetOut_trade_no($Out_trade_no);
@@ -23,7 +23,7 @@ $input->SetTotal_fee("69900");
 $input->SetTime_start(date("YmdHis"));
 $input->SetTime_expire(date("YmdHis", time() + 600));
 $input->SetGoods_tag("test");
-$input->SetNotify_url("/wx/pay/notify.php");
+$input->SetNotify_url("http://www.youyoucode.cn/wx/pay/notify.php");
 $input->SetTrade_type("JSAPI");
 $input->SetOpenid($openId);
 $order = WxPayApi::unifiedOrder($input);
@@ -38,7 +38,7 @@ $editAddress = $tools->GetEditAddressParameters();
 <head>
     <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/> 
-    <title>悠悠编程-常规班</title>
+    <title>码力编程-常规班</title>
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript">
     var phoneNumber = "";
@@ -65,7 +65,7 @@ $editAddress = $tools->GetEditAddressParameters();
 			        	history.go(-1);
 			        });
 				}else{
-					alert("支付失败,请重试，或可关注公众号'悠悠青少儿编程'获取更多帮助");
+					alert("支付失败,请重试，或可关注公众号'码力青少儿编程'获取更多帮助");
 				}
 			}
 		);
