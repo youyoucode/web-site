@@ -126,6 +126,9 @@
                 <div class="fourteen-icon4"></div>
                 <div class="fourteen-title4">课程主题</div>
                 <div id="fourteen-text4">1. 数学游戏 2.模式识别 3. 小动画制作</div>
+                <div class="fourteen-icon5"></div>
+                <div class="fourteen-title5">课程大纲</div>
+                <div id="fourteen-text5" onclick="window.location='http://www.youyoucode.cn/level2.html';">点击查看该Level课程详细介绍</div>
             </div>
         </div>
         <div class="fifteen"></div>
@@ -267,16 +270,28 @@
                     document.getElementById("fourteen-text2").innerHTML = "48课时/12个月， 每课时45~60分钟";
                     document.getElementById("fourteen-text3").innerHTML = "1. 掌握进阶Python编程语言 2. 独立制作简单小游戏，小项目 3. 培养计算思维能力 4. 理解软件开发原理 5. 热爱创作，敢于创新 6. 热爱思考，善于分析问题 7. 对创作和编程产生兴趣";
                     document.getElementById("fourteen-text4").innerHTML = "1. 小动画 2. 小游戏 3.网页小项目";
+                    document.getElementById("fourteen-text5").innerHTML = "点击查看Level2课时表";
+                    $('#fourteen-text5').on('click', function() {
+                        window.location.href = "http://www.youyoucode.cn/level2.html";
+                    })
                 } else if (tmpIndex - 4 == 0) {
                     document.getElementById("fourteen-text1").innerHTML = "10-13岁，掌握level2课程的内容，国内小学高年级以上的学生";
                     document.getElementById("fourteen-text2").innerHTML = "48课时/12个月， 每课时45~60分钟";
                     document.getElementById("fourteen-text3").innerHTML = "1. 掌握高级Python编程语言 2. 掌握基础MircoBit开源硬件开发 3. 独立制作大型游戏，高级3D游戏，VR项目 4. 掌握数据结构，算法知识 5. 有一定的自学能力和创造力 6. 能够独立分析问题，解决问题";
                     document.getElementById("fourteen-text4").innerHTML = "1. 开源硬件开发 2.高级游戏开发 3. VR项目";
+                    document.getElementById("fourteen-text5").innerHTML = "点击查看Level3课时表";
+                    $('#fourteen-text5').on('click', function() {
+                        window.location.href = "http://www.youyoucode.cn/level3.html";
+                    })
                 } else if (tmpIndex - 5 == 0) {
                     document.getElementById("fourteen-text1").innerHTML = "10岁以上，掌握level2课程的内容，2年以上编程学习基础";
                     document.getElementById("fourteen-text2").innerHTML = "24课时/3个月， 每课时45~60分钟";
                     document.getElementById("fourteen-text3").innerHTML = "1. 掌握C++编程语言 2. 信奥算法和相关知识点 3. 备战信息奥林匹克大赛";
                     document.getElementById("fourteen-text4").innerHTML = "1. NOIP竞赛";
+                    document.getElementById("fourteen-text5").innerHTML = "点击查看NOIP课时表";
+                    $('#fourteen-text5').on('click', function() {
+                        window.location.href = "http://www.youyoucode.cn/level4_1.html";
+                    })
                 } else {
                     document.getElementById("fourteen-text1").innerHTML = "13岁以上，掌握level3课程的内容，3年以上编程学习基础";
                     document.getElementById("fourteen-text2").innerHTML = "24课时/3个月， 每课时45~60分钟";
@@ -291,6 +306,8 @@
             $('#mIndex-4').on('click', clickHandler);
             $('#mIndex-5').on('click', clickHandler);
             $('#mIndex-6').on('click', clickHandler);
+            // $('#fourteen-text5').on('click', clickHandler);
+
         })
     </script>
     <script type='text/javascript'>
