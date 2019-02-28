@@ -1369,13 +1369,13 @@
                 }
                 var funcTip1 = "<h4 class='shapes-title'>绘图函数</h4><ul class='shapes-ul'>";
                 for (var i = 0; i < typeShapes.length; i++) {
-                    funcTip1 += "<li dataZd=" + typeShapes[i]['fundefault'] + "><div>" + typeShapes[i]['describes'] + "</div><img src='http://activity.youyoucode.cn/ide" + typeShapes[i].url + "' width='40' height='40'/><span>" + typeShapes[i]['name'] + "</span></li>";
+                    funcTip1 += "<li dataZd=" + typeShapes[i]['fundefault'] + "><div>" + typeShapes[i]['describes'] + "</div><img src='http://www.youyoucode.cn/python" + typeShapes[i].url + "' width='40' height='40'/><span>" + typeShapes[i]['name'] + "</span></li>";
                 }
                 funcTip1 += "</ul>";
                 $('#btn-function-content').append(funcTip1);
                 funcTip1 = "<h4 class='shapes-title'>基础函数</h4><ul class='shapes-ul'>";
                 for (var i = 0; i < typeTool.length; i++) {
-                    funcTip1 += "<li dataZd=" + typeTool[i]['fundefault'] + "><div>" + typeTool[i]['describes'] + "</div><img src='http://activity.youyoucode.cn/ide" + typeTool[i].url + "' width='40' height='40'/><span>" + typeTool[i]['name'] + "</span></li>";
+                    funcTip1 += "<li dataZd=" + typeTool[i]['fundefault'] + "><div>" + typeTool[i]['describes'] + "</div><img src='http://www.youyoucode.cn/python" + typeTool[i].url + "' width='40' height='40'/><span>" + typeTool[i]['name'] + "</span></li>";
                 }
                 funcTip1 += "</ul>";
                 $('#btn-insert-content').append(funcTip1);
@@ -1389,7 +1389,7 @@
                     $(this).on('click', function(e) {
                         var imageDefault = $(this).attr('imageDefault');
                         if (WorkerManager_1.default.getInstance().getEditor().editor.getCursorPosition().column > 0)
-                            WorkerManager_1.default.getInstance().getEditor().editor.insert('\n' + imageDefault);
+                            WorkerManager_1.default.getInstance().getEditor().editor.insert(imageDefault);
                         else
                             WorkerManager_1.default.getInstance().getEditor().editor.insert(imageDefault);
                         WorkerManager_1.default.getInstance().getMainWork().refreshFrame();
