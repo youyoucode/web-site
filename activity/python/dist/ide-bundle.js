@@ -392,8 +392,8 @@
                 _this.roomNameHeader = "llroom_";
                 _this.urlLoaded = [];
                 _this._isInitialled = false;
-                _this._gateSocketPort = "3010";
-                _this._gateSocketIP = "115.29.112.82";
+                _this._gateSocketPort = "4010";
+                _this._gateSocketIP = "www.youyoucode.cn";
                 return _this;
             }
             DataManager.getInstance = function() {
