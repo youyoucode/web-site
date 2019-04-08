@@ -393,7 +393,7 @@
                 _this.urlLoaded = [];
                 _this._isInitialled = false;
                 _this._gateSocketPort = "4010";
-                _this._gateSocketIP = "www.youyoucode.cn";
+                _this._gateSocketIP = "47.96.103.163";
                 return _this;
             }
             DataManager.getInstance = function() {
