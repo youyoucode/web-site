@@ -1135,7 +1135,7 @@
 
   pomelo.init = function(params, cb){
     this.initCallback = cb;
-    var host = params.host;
+    var host = params.host==="127.0.0.1" ? "47.96.103.163" : params.host;
     var port = params.port;
 
     var url = 'ws://' + host;
