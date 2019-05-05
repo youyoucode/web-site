@@ -2055,6 +2055,29 @@
                 else
                     return true;
             };
+
+            EngineImage.prototype.collide = function(bit) {
+                var x1= this.x;
+                var y1= this.y;
+                var w1= this.width;
+                var h1= this.height;
+                var x2= bit.x;
+                var y2= bit.y;
+                var w2= bit.width;
+                var h2= bit.height;
+                var lx,ly;
+
+                lx = Math.max(x1+w1-x2,x2+w2-x1);
+                ly = Math.max(y1+h1-y2,y2+h2-y1);
+                if(lx<w1+w2 && ly<h1+h2){
+                    return true;
+                }
+                else
+                {
+                    return false; 
+                }
+
+            };
             EngineImage.prototype.setPosition = function(x, y) {
                 this.x = x;
                 this.y = y;
