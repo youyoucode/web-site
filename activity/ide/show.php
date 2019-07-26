@@ -7,7 +7,7 @@ $signPackage = $jssdk->GetSignPackage();
 <html>
 <head>
     <meta charset="utf-8">
-    <title>诺瓦青少儿编程</title>
+    <title>零基础学编程，我正在学习少儿Python面授课程，快来看看我的成果吧</title>
     <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="full-screen" content="true" />
@@ -73,9 +73,9 @@ $signPackage = $jssdk->GetSignPackage();
         wx.ready(function () {
           //document.getElementById('fixed-bottom-nav').style.display = "block";
           wx.onMenuShareTimeline({
-              title: "我正在学习人工智能语言，快来看看我的成果吧！",  
+              title: "零基础学编程，我正在学习少儿Python面授课程，快来看看我的成果吧",  
               link: location.href,  
-              imgUrl: "http://www.youyoucode.cn/ide/resource/apple-touch-icon.png",  
+              imgUrl: "http://www.youyoucode.cn/img/logo2.png",  
               success: function () {
                 
               },
@@ -85,10 +85,10 @@ $signPackage = $jssdk->GetSignPackage();
           });
         
           wx.onMenuShareAppMessage({
-              desc: "8-15岁适用，严选专属老师在线授课，让孩子在家入门真正的编程",  
-              title: "我正在学习人工智能语言，快来看看我的成果吧！",
+              desc: "8-15岁适用，严选专业老师，让孩子零基础入门真正的编程",  
+              title: "零基础学编程，我正在学习少儿Python面授课程，快来看看我的成果吧",
               link: location.href,
-              imgUrl: "http://www.youyoucode.cn/ide/resource/apple-touch-icon.png",  
+              imgUrl: "http://www.youyoucode.cn/img/logo2.png",  
               type: 'link',  
               dataUrl: '',
               success: function () {
